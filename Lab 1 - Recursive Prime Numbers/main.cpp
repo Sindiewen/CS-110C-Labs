@@ -26,16 +26,18 @@ int main()
 void showFactors(int numberToFactor, int factor)
 {
     // Base Case - If factor hits 13
-    if (factor >= 13 || numberToFactor == 1)
+    if (factor >= 13 || numberToFactor <= 1)
     {
         // No point to go any farther, ends recursion
         return;
     }
 
+    // Prints the prime factors of the number
     if (numberToFactor % factor == 0)
     {
         // Prints current number and prime factor
         cout << numberToFactor / factor << "    " << factor << endl;
+
         // recursively calls function, divides number by the factor
         showFactors(numberToFactor / factor, factor);
 
