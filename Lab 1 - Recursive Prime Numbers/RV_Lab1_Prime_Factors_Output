@@ -1,0 +1,21 @@
+The output for 
+
+Output 1:
+    Enter a number you want to get the prime factors of: 100
+    The prime factors of 100 are: 5 5 2 2 
+    Process finished with exit code 0
+
+output 2:
+    Enter a number you want to get the prime factors of: 17
+    The prime factors of 17 are: 17 
+    Process finished with exit code 0
+
+Output 3:
+    Enter a number you want to get the prime factors of: 111
+    The prime factors of 111 are: 37 3 
+    Process finished with exit code 0
+
+Output 4:
+    Enter a number you want to get the prime factors of: 3960
+    The prime factors of 3960 are: 11 5 3 3 2 2 2 
+    Process finished with exit code 0
