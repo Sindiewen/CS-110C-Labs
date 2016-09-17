@@ -20,12 +20,23 @@ int main()
     int numberToFactor; // Stores the number the user wants to factor out
 
     // Stores number the user wants to factor out
-    cout << "Enter a number you want to get the prime factors of: ";
+    cout << "Enter a number you want to get the prime factors of or type 0 to exit:\n> ";
     cin  >> numberToFactor;
 
-    // Print the prime factors of a number
-    cout << "The prime factors of " << numberToFactor << " are: ";
-    showFactors(numberToFactor, 2);
+    while (numberToFactor > 0)
+    {
+        // Print the prime factors of a number
+        cout << "The prime factors of " << numberToFactor << " are: ";
+        showFactors(numberToFactor, 2);
+
+        cout << endl << endl;
+
+        // Stores number the user wants to factor out
+        cout << "Enter a number you want to get the prime factors of or type 0 to exit:\n> ";
+        cin  >> numberToFactor;
+    }
+
+
 
     // Ends program
     return 0;
