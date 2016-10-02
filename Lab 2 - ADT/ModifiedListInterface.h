@@ -18,7 +18,7 @@ public: // Public class functions
     // Virtual Function: Returns the current list length
     virtual int getLength() const = 0;
 
-    // Virtual Function :Inserts a new entry value into the list
+    // Virtual Function: Inserts a new entry value into the list
     virtual void insert(int newPosition, const ItemType &newEntry) = 0;
 
     // Virtual Function: Removes a value from the list at a specific location
@@ -28,7 +28,7 @@ public: // Public class functions
     virtual void clear() = 0;
 
     // Virtual Function: Gets the data at a specific location in the list
-    virtual ItemType getEntry(int position) = 0;
+    virtual ItemType getEntry(int position) const = 0;
 
     // Virtual function: replaces the specified entry with a new value
     virtual void setEntry(int position, const ItemType &newEntry) = 0;
