@@ -1,3 +1,11 @@
+/**
+ * @name Rachel Vancleave
+ * @date 9/30/16
+ * @summary This program takes an array of 5 integers. Stores them into an array list
+ * and checks each element in the list to see if they're in ascending order or not.
+ * The program will print to the display weather it's in ascending order or not.
+ */
+
 #include <iostream>
 #include "ModifiedArrayList.h"
 
