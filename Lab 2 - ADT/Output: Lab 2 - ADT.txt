@@ -1,0 +1,28 @@
+Output: Lab 2 - ADT
+
+"
+Using Independent Lists:
+Enter 5 integers to test separated by the return key: 5 9 101 183 4893
+Items are in ascending order.
+Do you want to continue (y/n): y
+
+
+Using Independent Lists:
+Enter 5 integers to test separated by the return key: 5 9 101 183 48
+Items are not in ascending order.
+Do you want to continue (y/n): n
+
+
+Using No List Member Functions:
+Enter 5 integers to test separated by the return key: :  5 9 101 183 4893
+Items are in ascending order.
+Do you want to continue (y/n): y
+
+
+Using No List Member Functions:
+Enter 5 integers to test separated by the return key: :  5 9 101 183 48
+Items are not in ascending order.
+Do you want to continue (y/n): n
+
+Process finished with exit code 0
+"

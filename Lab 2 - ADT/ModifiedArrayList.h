@@ -32,7 +32,7 @@ public:     // Public class Functions
 
     bool isInAscendingOrderIndependent();           // Checks if the current list is in ascending order
                                                     // Using member functions
-    bool isInAscendingOrderNoListMemberFunctions();  // Checks if the current list is in ascending order
+    bool isInAscendingOrderNoListMemberFunctions(); // Checks if the current list is in ascending order
                                                     // Not using Member Functions
 };
 
