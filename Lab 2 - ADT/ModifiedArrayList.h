@@ -52,22 +52,17 @@ bool ModifiedArrayList<ItemType>::isEmpty() const
 template  <typename ItemType>
 bool ModifiedArrayList<ItemType>::isInAscendingOrder()
 {
-    ItemType curTemp;
-    ItemType nextTemp;
+    // Loops through the array, checking the list to see if the array is in ascending order
     for (int i = 0; i < itemCount; i++)
     {
-        std::cout << "Items in index " << i << " " << items[i] << std::endl;
-    }
-
-    for (int i = 0; i < itemCount; i++)
-    {
-        if (items[i] > items[i + 1])
+        // If i has not met itemCount and if the current item is less than the next item
+        if (i != itemCount - 1 && items[i] > items[i + 1])
         {
-            std::cout << "Not in ascending order";
+            // Items are not in ascending order
             return false;
         }
     }
-
+    // Items are in ascending order
     return true;
 }
 

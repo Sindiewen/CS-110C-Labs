@@ -3,27 +3,44 @@
 
 int main()
 {
+    // Variables
+    const int ARR_SIZE = 5;   // Stores how many values are going to be in the array
 
-    int data1 = 24, data2 = 42, data3 = 12;
+    int values[5];      // Stores all the user inputted values
 
-    ModifiedArrayList <int> myList;
-    ModifiedArrayList <int> myList2;
-    ModifiedListInterface <int> *myListInterface = &myList;
-    ModifiedListInterface <int> *myListInterface2 = &myList2;
+    char ynSelect;
 
-    std::cout << "Hello, World! ArrayList Test:\n Adding 3 values:" << std::endl;
+    ModifiedArrayList <int> myList;                         // Creates object of the modifiedArrayList
+    ModifiedListInterface <int> *myListInterface = &myList; // Links the modifiedListInterface to the reference to the modifiedArrayList
 
-    myListInterface->insert(1, data3);
-    myListInterface->insert(2, data1);
-    myListInterface->insert(3, data2);
+    do
+    {
+        // User inputs 5 integers
+        std::cout << "Enter 5 integers to test: ";
+        for (int i = 0; i < ARR_SIZE; i++)
+        {
+            std::cin >> values[i];
+            myListInterface->insert(i + 1, values[i]);  // Inserts value into list
+        }
 
-    std::cout << "\n";
+        // Tests if integers are in ascending order
+        if (!myListInterface->isInAscendingOrder())
+        {
+            std::cout << "Items are not in ascending order." << std::endl;
+        }
+        else
+        {
+            std::cout << "Items are in ascending order." << std::endl;
+        }
+        // Clears list of integers
+        myListInterface->clear();
 
-    std::cout << "Getting the first entry: " << myListInterface->getEntry(1) << std::endl;
+        // Asks if user want to check again
+        std::cout << "Do you want to continue (y/n): ";
+        std::cin  >> ynSelect;
+    }
+    while (ynSelect == 'y' || ynSelect == 'Y');
 
-    std::cout << "Testing isInAscendingOrder(): " << myListInterface->isInAscendingOrder() << std::endl;
-
-    myListInterface->clear();
 
 
     return 0;
