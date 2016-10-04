@@ -10,21 +10,25 @@ int main()
 
     char ynSelect;
 
-    ModifiedArrayList <int> myList;                         // Creates object of the modifiedArrayList
-    ModifiedListInterface <int> *myListInterface = &myList; // Links the modifiedListInterface to the reference to the modifiedArrayList
+    ModifiedArrayList <int> listNoMemberFunc;               // Creates object of the modifiedArrayList
+    ModifiedArrayList <int> listIndependent;
+
+    ModifiedListInterface <int> *listA = &listIndependent;  // Links the modifiedListInterface to the reference
+                                                            // to the modifiedArrayList: ...Independent
+    ModifiedListInterface <int> *listB = &listNoMemberFunc; // Links the modifiedListInterface to the reference
+                                                            // to the modifiedArrayList: ...NoListMemberFunctions
 
     do
     {
-        // User inputs 5 integers
-        std::cout << "Enter 5 integers to test: ";
-        for (int i = 0; i < ARR_SIZE; i++)
+        std::cout << "Using Independent Lists:\nEnter 5 integers to test: ";
+        for(int i = 0; i < ARR_SIZE; i++)
         {
             std::cin >> values[i];
-            myListInterface->insert(i + 1, values[i]);  // Inserts value into list
+            listA->insert(i + 1, values[i]);
+
         }
 
-        // Tests if integers are in ascending order
-        if (!myListInterface->isInAscendingOrder())
+        if (!listA->isInAscendingOrderIndependent())
         {
             std::cout << "Items are not in ascending order." << std::endl;
         }
@@ -32,8 +36,36 @@ int main()
         {
             std::cout << "Items are in ascending order." << std::endl;
         }
+
+        listA->clear();
+
+        std::cout << "Do you want to continue (y/n): ";
+        std::cin  >> ynSelect;
+    }
+    while (ynSelect == 'y' || ynSelect == 'Y');
+
+    do
+    {
+        // User inputs 5 integers
+        std::cout << "Using No List Member Functions:\nEnter 5 integers to test: ";
+        for (int i = 0; i < ARR_SIZE; i++)
+        {
+            std::cin >> values[i];
+            listB->insert(i + 1, values[i]);  // Inserts value into list
+        }
+
+        // Tests if integers are in ascending order
+        if (!listB->isInAscendingOrderNoListMemberFunctions())
+        {
+            std::cout << "Items are not in ascending order." << std::endl;
+        }
+        else
+        {
+            std::cout << "Items are in ascending order." << std::endl;
+        }
+
         // Clears list of integers
-        myListInterface->clear();
+        listB->clear();
 
         // Asks if user want to check again
         std::cout << "Do you want to continue (y/n): ";

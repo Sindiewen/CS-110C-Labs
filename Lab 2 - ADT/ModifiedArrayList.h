@@ -19,7 +19,6 @@ public:     // Public class Functions
     ModifiedArrayList();        // Class Constructor
 
     bool isEmpty() const;       // Checks if the list is empty
-    bool isInAscendingOrder();  // Checks if the current list is in ascending order
 
     int getLength() const;      // Gets the current length of the list
 
@@ -29,7 +28,14 @@ public:     // Public class Functions
 
     ItemType getEntry   (int position) const;                       // Gets the current value in the ArrayList
     void setEntry       (int position, const ItemType &newEntry);   // Replaces old data at a position with new data
+
+
+    bool isInAscendingOrderIndependent();           // Checks if the current list is in ascending order
+                                                    // Using member functions
+    bool isInAscendingOrderNoListMemberFunctions();  // Checks if the current list is in ascending order
+                                                    // Not using Member Functions
 };
+
 
 // Class Function Declarations //
 
@@ -48,23 +54,6 @@ bool ModifiedArrayList<ItemType>::isEmpty() const
     return itemCount == 0;
 }
 
-// Checks if the list is in ascending order
-template  <typename ItemType>
-bool ModifiedArrayList<ItemType>::isInAscendingOrder()
-{
-    // Loops through the array, checking the list to see if the array is in ascending order
-    for (int i = 0; i < itemCount; i++)
-    {
-        // If i has not met itemCount and if the current item is less than the next item
-        if (i != itemCount - 1 && items[i] > items[i + 1])
-        {
-            // Items are not in ascending order
-            return false;
-        }
-    }
-    // Items are in ascending order
-    return true;
-}
 
 // Gets the current length of the list
 template  <typename ItemType>
@@ -125,6 +114,42 @@ template <typename ItemType>
 void ModifiedArrayList<ItemType>::setEntry(int position, const ItemType &newEntry)
 {
     items[position = 1] = newEntry;
+}
+
+// Checks if the list is in ascending order, using member functions
+template <typename ItemType>
+bool ModifiedArrayList<ItemType>::isInAscendingOrderIndependent()
+{
+    // Loops through the list, checking the list to see if the values are in ascending order
+    for (int i = 0; i < getLength(); i++)
+    {
+        // If i has not met the list length, and if the returned entry is greater than the next entry
+        if (i != getLength() && getEntry(i) > getEntry(i + 1))
+        {
+            // List is currently not in ascending order
+            return false;
+        }
+    }
+    // Values are in ascending order
+    return true;
+}
+
+// Checks if the list is in ascending order, Not using the list member functions
+template  <typename ItemType>
+bool ModifiedArrayList<ItemType>::isInAscendingOrderNoListMemberFunctions()
+{
+    // Loops through the list, checking the list to see if the values are in ascending order
+    for (int i = 0; i < itemCount; i++)
+    {
+        // If i has not met itemCount and if the current item is less than the next item
+        if (i != itemCount - 1 && items[i] > items[i + 1])
+        {
+            // Items are not in ascending order
+            return false;
+        }
+    }
+    // Items are in ascending order
+    return true;
 }
 
 #endif //LAB_2_ADT_MODIFIEDARRAYLIST_H

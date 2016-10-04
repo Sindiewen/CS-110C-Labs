@@ -33,8 +33,13 @@ public: // Public class functions
     // Virtual function: replaces the specified entry with a new value
     virtual void setEntry(int position, const ItemType &newEntry) = 0;
 
-    // Compares the values inside the list, checking if it's in ascending order
-    virtual bool isInAscendingOrder() = 0;
+    // Compares the values inside the list, checking if it's in ascending order.
+    // Using the member functions
+    virtual bool isInAscendingOrderIndependent() = 0;
+
+    // Compares the values inside the list, checking if it's in ascending order.
+    // Not using the list member functions
+    virtual bool isInAscendingOrderNoListMemberFunctions() = 0;
 };
 
 #endif //LAB_2_ADT_MODIFIEDLISTINTERFACE_H
