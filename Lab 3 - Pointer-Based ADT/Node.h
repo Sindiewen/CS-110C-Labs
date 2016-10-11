@@ -4,8 +4,6 @@
 /*
  * Node.h
  *
- *
- *
  */
 #ifndef LAB_3_POINTER_BASED_ADT_NODE_H
 #define LAB_3_POINTER_BASED_ADT_NODE_H
