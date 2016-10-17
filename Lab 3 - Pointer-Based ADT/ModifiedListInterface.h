@@ -32,6 +32,12 @@ public: // Public class functions
 
     // Virtual function: replaces the specified entry with a new value
     virtual void setEntry(int position, const ItemType &newEntry) = 0;
+
+    // Replaces old values in the linked list with a new value
+    virtual int replaceValue(ItemType oldValue, ItemType newValue) = 0;
+
+    // Compares 2 linked lists if they're both equal
+    virtual bool equals () = 0;
 };
 
 #endif //LAB_2_ADT_MODIFIEDLISTINTERFACE_H

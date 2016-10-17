@@ -35,6 +35,19 @@ public:
     ItemType getEntry(int position) const;                            // Returns the value at the given location
 
     void setEntry(int position, const ItemType &newEntry);      // Replaces value at location with another value
+
+    // Replaces old values in the linked list with a new value
+    int replaceValue(ItemType oldValue, ItemType newValue);
+
+    // Compares 2 linked lists if they're both equal
+    bool equals ();
+
+
+    LinkedList operator == (const LinkedList &L)
+    {
+        LinkedList lList;
+    }
+
 };
 
 // LinkedList Implementation //
@@ -205,6 +218,43 @@ Node<ItemType> *LinkedList<ItemType>::getNodeAt(int position) const
     }
 
     return curPtr;
+}
+
+// Replaces old values in the linked list with a new value
+template <typename ItemType>
+int LinkedList<ItemType>::replaceValue(ItemType oldValue, ItemType newValue)
+{
+    int counter = 0;
+
+    // Creates a new pointer, replacePtr, pointing to the headPtr
+    Node<ItemType> *replacePtr = headPtr;
+
+    // While the replacePtr is not null
+    while (replacePtr != nullptr)
+    {
+        // If the current node value == to the old value stored...
+        if(replacePtr->getItem() == oldValue)
+        {
+            // Replace said item with the new value passed
+            replacePtr->setItem(newValue);
+
+            // Iterates the counter by 1
+            counter ++;
+        }
+
+        // Sets the current replacePtr node to the next node
+        replacePtr = replacePtr->getNext();
+    }
+
+    // Returns the current count of how many items replaced
+    return counter;
+}
+
+// Compares 2 linked lists if they're both equal
+template <typename ItemType>
+bool LinkedList<ItemType>::equals ()
+{
+    return false;
 }
 
 #endif //LAB_3_POINTER_BASED_ADT_MODIFEDLINKEDLIST_H
