@@ -43,14 +43,23 @@ public:
     bool equals ();
 
 
-    LinkedList operator == (const LinkedList &L)
-    {
-        LinkedList lList;
-    }
+    LinkedList operator== (const LinkedList L);
+
 
 };
-
 // LinkedList Implementation //
+
+// Operator overloading of the "==" operator
+template <typename ItemType>
+LinkedList<ItemType> LinkedList<ItemType>::operator== (const LinkedList<ItemType> L)
+{
+    LinkedList<int> lList;
+
+    lList = LinkedList == L;
+
+    return (lList);
+}
+
 
 // Class Constructor
 template<typename ItemType>
