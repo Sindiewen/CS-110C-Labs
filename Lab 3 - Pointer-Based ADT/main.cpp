@@ -6,10 +6,10 @@ using namespace std;
 int main()
 {
     // Function variables
-    string      inputNum;       // Stores the value the user enters into the list
-    char        ynSel;          // Stores either a y/Y or n/N to select wheather the user wants yes or no
-    int         i = 0;
-    int         num;
+    int     inputNum;       // Stores the value the user enters into the list
+    int     modifiedNum;    // Stores value to replace
+    int     replaceNum;     // Stores a value that will replace modifiedNum
+    char    ynSel;          // Stores either a y/Y or n/N to select wheather the user wants yes or no
 
     std::stringstream ss;
 
@@ -22,10 +22,25 @@ int main()
     // Prompts user to enter a list of integers
     cout << "Enter a list of 6 integers: " << endl;
 
-    for (int i = 0; i < 6; i++)
+    for (int i = 1; i <= 6; i++)
     {
+        // Recieves input of ints
+        cin >> inputNum;
+        cin.ignore();
 
+        // Inserts value into the linked list
+        List1.insert(1, inputNum);
     }
+
+    // Prompts the user to enter a value to modify
+    cout << "Enter a number to be modified: ";
+    cin  >> modifiedNum;
+    cin.ignore();
+
+    // Prompts the user to enter a number to replace
+    cout << "Enter replacement value: ";
+    cin  >> replaceNum;
+    cin.ignore();
 
     /*
     // While the user continues to enter number into the stringstream
@@ -40,40 +55,18 @@ int main()
             i++;
         }
     }
-*/
-/*
-    List1.insert(1, 10);
-    List1.insert(2, 14);
-    List1.insert(3, 10);
-    List1.insert(4, 13);
-    List1.insert(5, 25);
-    List1.insert(6, 10);
+    */
 
-    List2.insert(1, 10);
-    List2.insert(2, 14);
-    List2.insert(3, 10);
-    List2.insert(4, 13);
-    List2.insert(5, 25);
-    List2.insert(6, 10);
-*/
+    // Replacing the node values
+    std::cout << "Number of items replaced: " << List1.replaceValue(modifiedNum, replaceNum) << std::endl;
 
 
 
-    for(int i = 1; i <= List1.getLength(); i++)
-    {
-        std::cout << "Value at Node " << i << ": " << List1.getEntry(i) << std::endl;
-    }
-
-    std::cout << "The length of the linked list is " << List1.getLength() << std::endl;
-
-    // Replacing a node:
-    std::cout << "Replacing all nodes with value 10 with 2..." << std::endl;
-
-    std::cout << "Number of items replaced: " << List1.replaceValue(10, 2) << std::endl;
-
+    // Prints the new list
+    cout << "Modified List: ";
     for (int i = 1; i <= List1.getLength(); ++i)
     {
-        std::cout << "Value at Node " << i << ": " << List1.getEntry(i) << std::endl;
+        std::cout << List1.getEntry(i) << " ";
     }
 
     List1.clear();
