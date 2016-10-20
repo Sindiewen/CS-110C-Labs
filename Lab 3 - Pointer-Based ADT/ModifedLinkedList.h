@@ -7,6 +7,7 @@
 
 #include "ModifiedListInterface.h"
 #include "Node.h"
+#include <iostream>
 
 template <typename ItemType>
 class LinkedList : public ModifiedListInterface<ItemType>
@@ -49,16 +50,19 @@ public:
 };
 // LinkedList Implementation //
 
+
 // Operator overloading of the "==" operator
 template <typename ItemType>
 LinkedList<ItemType> LinkedList<ItemType>::operator== (const LinkedList<ItemType> L)
 {
     LinkedList<int> lList;
 
-    lList = LinkedList == L;
+    //lList = LinkedList == L;
+
 
     return (lList);
 }
+
 
 
 // Class Constructor
@@ -229,6 +233,11 @@ Node<ItemType> *LinkedList<ItemType>::getNodeAt(int position) const
     return curPtr;
 }
 
+
+///////////////
+// Lab 3 Implementation
+///////////////
+
 // Replaces old values in the linked list with a new value
 template <typename ItemType>
 int LinkedList<ItemType>::replaceValue(ItemType oldValue, ItemType newValue)
@@ -241,18 +250,17 @@ int LinkedList<ItemType>::replaceValue(ItemType oldValue, ItemType newValue)
     // While the replacePtr is not null
     while (replacePtr != nullptr)
     {
-        // If the current node value == to the old value stored...
-        if(replacePtr->getItem() == oldValue)
+        // If the current node value == to the old value
+        if (replacePtr->item == oldValue)
         {
-            // Replace said item with the new value passed
-            replacePtr->setItem(newValue);
+            // Replace said item with the new item passed
+            replacePtr->item = newValue;
 
             // Iterates the counter by 1
-            counter ++;
+            counter++;
         }
-
-        // Sets the current replacePtr node to the next node
-        replacePtr = replacePtr->getNext();
+        // Sets the replacePtr to the next value
+        replacePtr = replacePtr->next;
     }
 
     // Returns the current count of how many items replaced
@@ -261,9 +269,21 @@ int LinkedList<ItemType>::replaceValue(ItemType oldValue, ItemType newValue)
 
 // Compares 2 linked lists if they're both equal
 template <typename ItemType>
-bool LinkedList<ItemType>::equals ()
+bool LinkedList<ItemType>::equals()
 {
-    return false;
+    /*
+    while (listA != nullptr && listB != nullptr)
+    {
+        if  (listA->item != listB->item)
+        {
+            return false;
+        }
+
+        listA = listA->next;
+        listB = listB->next;
+    }
+*/
+    return true;//(listA == nullptr && listB == nullptr);
 }
 
 #endif //LAB_3_POINTER_BASED_ADT_MODIFEDLINKEDLIST_H

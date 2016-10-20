@@ -11,11 +11,11 @@
 template <typename ItemType>
 class Node
 {
-private:
+public:
     ItemType        item;   // A Data item - Stores value in a node
     Node<ItemType> *next;   // Pointer to the next node in the chain
 
-public:
+
     Node();                                                     // Node class Constructor
                                                                 // Default constructoii - no values passed
     Node(const ItemType &anItem);                               // Node Class Constructor
