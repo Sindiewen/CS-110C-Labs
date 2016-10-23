@@ -41,10 +41,10 @@ public:
     int replaceValue(ItemType oldValue, ItemType newValue);
 
     // Compares 2 linked lists if they're both equal
-    bool equals ();
+    bool equals (Node<ItemType> *aList);
 
 
-    LinkedList operator== (const LinkedList L);
+    LinkedList operator== (const LinkedList<ItemType> &lhs, const LinkedList<ItemType> &rhs);
 
 
 };
@@ -53,14 +53,11 @@ public:
 
 // Operator overloading of the "==" operator
 template <typename ItemType>
-LinkedList<ItemType> LinkedList<ItemType>::operator== (const LinkedList<ItemType> L)
+LinkedList<ItemType> LinkedList<ItemType>::operator== (const LinkedList<ItemType> &lhs, const LinkedList<ItemType> &rhs)
 {
-    LinkedList<int> lList;
+    //LinkedList<int> lList;
 
-    //lList = LinkedList == L;
-
-
-    return (lList);
+    return (lhs == rhs);
 }
 
 
@@ -269,22 +266,31 @@ int LinkedList<ItemType>::replaceValue(ItemType oldValue, ItemType newValue)
 
 // Compares 2 linked lists if they're both equal
 template <typename ItemType>
-bool LinkedList<ItemType>::equals()
-{
-    /*
-    while (listA != nullptr && listB != nullptr)
+bool LinkedList<ItemType>::equals(Node<ItemType> *aList) {
+
+    // equalsPtr points to the begining of the list
+    Node<ItemType> *equalsPtr = headPtr;
+
+    while (equalsPtr->item != nullptr && aList->item != nullptr)
     {
-        if  (listA->item != listB->item)
-        {
+
+        // If the current item of both lists are not false
+        if (equalsPtr->item != aList->item) {
+            // Returns false. Both lists are not the same
             return false;
         }
 
-        listA = listA->next;
-        listB = listB->next;
+        // Sets the equalsPtr and the list to compare to the next node
+        equalsPtr = equalsPtr->next;
+        aList = aList->next;
     }
-*/
-    return true;//(listA == nullptr && listB == nullptr);
+
+    // Just in case...
+    // Returns true if both items are null, false if one of them is not
+    // Ensures that it will always print out true or false depending on the list
+    return (equalsPtr->item == nullptr && aList->item == nullptr);
 }
+
 
 #endif //LAB_3_POINTER_BASED_ADT_MODIFEDLINKEDLIST_H
 
