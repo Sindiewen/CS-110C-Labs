@@ -1,5 +1,5 @@
 //
-// Created by rachie on 10/7/16.
+// Created by Rachel Vancleave on 10/7/16.
 //
 
 #ifndef LAB_3_POINTER_BASED_ADT_MODIFEDLINKEDLIST_H
@@ -41,26 +41,10 @@ public:
     int replaceValue(ItemType oldValue, ItemType newValue);
 
     // Compares 2 linked lists if they're both equal
-    bool equals (Node<ItemType> *aList);
-
-
-    LinkedList operator== (const LinkedList<ItemType> &lhs, const LinkedList<ItemType> &rhs);
+    bool equals (LinkedList<ItemType> aList);
 
 
 };
-// LinkedList Implementation //
-
-
-// Operator overloading of the "==" operator
-template <typename ItemType>
-LinkedList<ItemType> LinkedList<ItemType>::operator== (const LinkedList<ItemType> &lhs, const LinkedList<ItemType> &rhs)
-{
-    //LinkedList<int> lList;
-
-    return (lhs == rhs);
-}
-
-
 
 // Class Constructor
 template<typename ItemType>
@@ -236,6 +220,17 @@ Node<ItemType> *LinkedList<ItemType>::getNodeAt(int position) const
 ///////////////
 
 // Replaces old values in the linked list with a new value
+//		this funciton is called from the driver program, It will take the object of
+// the linked list, pass in 2 values, an old value and a new value, and go through
+// each value of the linked list replacing the respective old value with the new value.
+//		@param ItemType template value for old value and newValue.
+//		@pre none
+//		@post A new pointer is created claled replacePtr. Pointing to the headPtr.
+//	While the replacePtr is not null, it will check if the current value it's pointing
+//	is the same as the old value. If it is, it will replace the value with the new value.
+//	If not, it will just move onto the next value untill the replacePtr reaches a nullPtr.
+//	When it succssfully replaces an old value, it will iterate the counter by 1. Once finished,
+//	it will return the ammount of values it has successfully changed.
 template <typename ItemType>
 int LinkedList<ItemType>::replaceValue(ItemType oldValue, ItemType newValue)
 {
@@ -265,30 +260,38 @@ int LinkedList<ItemType>::replaceValue(ItemType oldValue, ItemType newValue)
 }
 
 // Compares 2 linked lists if they're both equal
+//		This function is called from the driver program. It will take the object of
+//	the linked list, and pass in 1 more value, another Linked list. Comparing this
+//	current linked list with the passed in Linked List.
+//		@param A ItemType template value of a Linked List to compare with.
+//		@pre none
+//		@post 2 Pointers will be created. equalsPtr pointing to this linkedList headPtr,
+//	and aListPtr, pointing to the passed 'aList' headPtr. While both thoes pointers are
+//	not nullPtr, it will check weather both lists have the same vaules. If at any moment
+//	one of the lists has a different value than the other list, it will terminate and
+//	return false. If it successfully completes going through the linked list, at the end
+//	It will return true telling the user both lists have the same values in it.
 template <typename ItemType>
-bool LinkedList<ItemType>::equals(Node<ItemType> *aList) {
-
-    // equalsPtr points to the begining of the list
-    Node<ItemType> *equalsPtr = headPtr;
-
-    while (equalsPtr->item != nullptr && aList->item != nullptr)
-    {
-
-        // If the current item of both lists are not false
-        if (equalsPtr->item != aList->item) {
-            // Returns false. Both lists are not the same
-            return false;
-        }
-
-        // Sets the equalsPtr and the list to compare to the next node
-        equalsPtr = equalsPtr->next;
-        aList = aList->next;
-    }
-
-    // Just in case...
-    // Returns true if both items are null, false if one of them is not
-    // Ensures that it will always print out true or false depending on the list
-    return (equalsPtr->item == nullptr && aList->item == nullptr);
+bool LinkedList<ItemType>::equals(LinkedList<ItemType> aList)
+{
+	// Declaring new Nodes to test
+    Node<ItemType> *equalsPtr = headPtr;		// equalsPtr points to the current list's headPtr
+    Node<ItemType> *aListPtr = aList.headPtr;	// aListPtr points to the Passed in lists headPtr
+	
+	while (equalsPtr != nullptr && aListPtr != nullptr)
+	{
+		// If the current item of both lists are not false
+		if (equalsPtr->item != aListPtr->item) {
+			// Returns false. Both lists are not the same
+			return false;
+		}
+		
+		// Sets the equalsPtr and the listPtr to the next value to compare
+		equalsPtr = equalsPtr->next;
+		aListPtr = aListPtr->next;
+	}
+	// Returns true when the both the list's have been iterated through and tested true
+	return true;
 }
 
 
