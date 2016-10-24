@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CC4E20341DBECC0F002AADCD /* Lab 3 Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Lab 3 Output.txt"; sourceTree = SOURCE_ROOT; };
 		CCA350D41DBEA33B00F26498 /* Lab 3 - Pointer-Based ADT */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lab 3 - Pointer-Based ADT"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA350DE1DBEA3C500F26498 /* ModifedLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModifedLinkedList.h; path = ../../ModifedLinkedList.h; sourceTree = "<group>"; };
 		CCA350DF1DBEA3C500F26498 /* ModifiedListInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModifiedListInterface.h; path = ../../ModifiedListInterface.h; sourceTree = "<group>"; };
@@ -64,6 +65,7 @@
 				CCA350DF1DBEA3C500F26498 /* ModifiedListInterface.h */,
 				CCA350E01DBEA3C500F26498 /* Node.h */,
 				CCA350E11DBEA3C500F26498 /* main.cpp */,
+				CC4E20341DBECC0F002AADCD /* Lab 3 Output.txt */,
 			);
 			path = "Lab 3 - Pointer-Based ADT";
 			sourceTree = "<group>";
@@ -252,6 +254,7 @@
 				CCA350DD1DBEA33B00F26498 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

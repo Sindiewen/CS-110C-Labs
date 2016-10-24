@@ -1,0 +1,60 @@
+Lab 3 Output:
+
+What function would you like to run?
+1 ----- Replace values in a linked list
+2 ----- Compare 2 linked lists
+0 ----- Close program
+> 1
+Enter a list of 6 integers followed by the enter/return key:
+10 14 10 13 25 10
+Enter a number to be modified: 10
+Enter replacement value: 2
+Number of items replaced: 3
+Modified List: 2 14 2 13 25 2
+Would you like to modify another list? [y/n] y
+
+Enter a list of 6 integers followed by the enter/return key:
+10 14 10 13 25 10
+Enter a number to be modified: 9
+Enter replacement value: 2
+Number of items replaced: 0
+Modified List: 10 14 10 13 25 10
+Would you like to modify another list? [y/n] n
+
+------------------------------
+
+What function would you like to run?
+1 ----- Replace values in a linked list
+2 ----- Compare 2 linked lists
+0 ----- Close program
+> 2
+Enter first list of 6 integers followed by the enter/return key:
+10 14 10 13 25 10
+Enter second list of 6 integers followed by the enter/return key:
+10 14 10 13 25 10
+The two lists are equal.
+Would you like to compare two more lists? [y/n] y
+
+Enter first list of 6 integers followed by the enter/return key:
+10 14 10 13 25 10
+Enter second list of 6 integers followed by the enter/return key:
+10 14 10 13 25 20
+The two lists are not equal.
+Would you like to compare two more lists? [y/n] y
+
+Enter first list of 6 integers followed by the enter/return key:
+10 14 10 13 25 10
+Enter second list of 6 integers followed by the enter/return key:
+10 14 10 11 25 10
+The two lists are not equal.
+Would you like to compare two more lists? [y/n] n
+
+------------------------------
+
+What function would you like to run?
+1 ----- Replace values in a linked list
+2 ----- Compare 2 linked lists
+0 ----- Close program
+> 0
+Closing program...
+Program ended with exit code: 0
