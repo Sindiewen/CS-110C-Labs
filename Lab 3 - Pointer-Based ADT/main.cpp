@@ -99,7 +99,6 @@ void replaceLinkedListValues(LinkedList<int> &list, int &inputNum, int &modified
 		inputNum	= 0;
 		modifiedNum = 0;
 		replaceNum	= 0;
-		int ssTemp;
 		
 		// Prompts user to enter a list of integers
 		cout << "Enter a list of 6 integers followed by the enter/return key: " << endl;
