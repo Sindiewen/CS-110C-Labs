@@ -41,7 +41,7 @@ public:
     int replaceValue(ItemType oldValue, ItemType newValue);
 
     // Compares 2 linked lists if they're both equal
-    bool equals (LinkedList<ItemType> aList);
+    bool equals (const LinkedList<ItemType> &aList);
 
 
 };
@@ -272,7 +272,7 @@ int LinkedList<ItemType>::replaceValue(ItemType oldValue, ItemType newValue)
 //	return false. If it successfully completes going through the linked list, at the end
 //	It will return true telling the user both lists have the same values in it.
 template <typename ItemType>
-bool LinkedList<ItemType>::equals(LinkedList<ItemType> aList)
+bool LinkedList<ItemType>::equals(const LinkedList<ItemType> &aList)
 {
 	// Declaring new Nodes to test
     Node<ItemType> *equalsPtr = headPtr;		// equalsPtr points to the current list's headPtr
