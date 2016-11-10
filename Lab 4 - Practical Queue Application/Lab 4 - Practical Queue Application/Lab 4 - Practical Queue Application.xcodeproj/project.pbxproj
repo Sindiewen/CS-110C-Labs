@@ -6,8 +6,12 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CCA74F421DD3F92700804AB6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCA74F411DD3F92700804AB6 /* main.cpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		CC409C521DD3E77D005D5AEF /* CopyFiles */ = {
+		CCA74F331DD3F8F000804AB6 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -19,12 +23,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CC409C541DD3E77D005D5AEF /* Lab 4 - Practical Queue Application */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lab 4 - Practical Queue Application"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC409C5E1DD3E83C005D5AEF /* Code */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Code; path = ../Code; sourceTree = "<group>"; };
+		CCA74F351DD3F8F000804AB6 /* Lab 4 - Practical Queue Application */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lab 4 - Practical Queue Application"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCA74F3F1DD3F92700804AB6 /* DocumentQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentQueue.h; sourceTree = "<group>"; };
+		CCA74F401DD3F92700804AB6 /* QueueInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueInterface.h; sourceTree = "<group>"; };
+		CCA74F411DD3F92700804AB6 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CC409C511DD3E77D005D5AEF /* Frameworks */ = {
+		CCA74F321DD3F8F000804AB6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,32 +40,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CC409C4B1DD3E77D005D5AEF = {
+		CCA74F2C1DD3F8F000804AB6 = {
 			isa = PBXGroup;
 			children = (
-				CC409C551DD3E77D005D5AEF /* Products */,
-				CC409C5E1DD3E83C005D5AEF /* Code */,
+				CCA74F371DD3F8F000804AB6 /* Lab 4 - Practical Queue Application */,
+				CCA74F361DD3F8F000804AB6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CC409C551DD3E77D005D5AEF /* Products */ = {
+		CCA74F361DD3F8F000804AB6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CC409C541DD3E77D005D5AEF /* Lab 4 - Practical Queue Application */,
+				CCA74F351DD3F8F000804AB6 /* Lab 4 - Practical Queue Application */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CCA74F371DD3F8F000804AB6 /* Lab 4 - Practical Queue Application */ = {
+			isa = PBXGroup;
+			children = (
+				CCA74F411DD3F92700804AB6 /* main.cpp */,
+				CCA74F3F1DD3F92700804AB6 /* DocumentQueue.h */,
+				CCA74F401DD3F92700804AB6 /* QueueInterface.h */,
+			);
+			path = "Lab 4 - Practical Queue Application";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CC409C531DD3E77D005D5AEF /* Lab 4 - Practical Queue Application */ = {
+		CCA74F341DD3F8F000804AB6 /* Lab 4 - Practical Queue Application */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC409C5B1DD3E77D005D5AEF /* Build configuration list for PBXNativeTarget "Lab 4 - Practical Queue Application" */;
+			buildConfigurationList = CCA74F3C1DD3F8F000804AB6 /* Build configuration list for PBXNativeTarget "Lab 4 - Practical Queue Application" */;
 			buildPhases = (
-				CC409C501DD3E77D005D5AEF /* Sources */,
-				CC409C511DD3E77D005D5AEF /* Frameworks */,
-				CC409C521DD3E77D005D5AEF /* CopyFiles */,
+				CCA74F311DD3F8F000804AB6 /* Sources */,
+				CCA74F321DD3F8F000804AB6 /* Frameworks */,
+				CCA74F331DD3F8F000804AB6 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -67,53 +83,54 @@
 			);
 			name = "Lab 4 - Practical Queue Application";
 			productName = "Lab 4 - Practical Queue Application";
-			productReference = CC409C541DD3E77D005D5AEF /* Lab 4 - Practical Queue Application */;
+			productReference = CCA74F351DD3F8F000804AB6 /* Lab 4 - Practical Queue Application */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CC409C4C1DD3E77D005D5AEF /* Project object */ = {
+		CCA74F2D1DD3F8F000804AB6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Rachel Vancleave";
 				TargetAttributes = {
-					CC409C531DD3E77D005D5AEF = {
+					CCA74F341DD3F8F000804AB6 = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = CC409C4F1DD3E77D005D5AEF /* Build configuration list for PBXProject "Lab 4 - Practical Queue Application" */;
+			buildConfigurationList = CCA74F301DD3F8F000804AB6 /* Build configuration list for PBXProject "Lab 4 - Practical Queue Application" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = CC409C4B1DD3E77D005D5AEF;
-			productRefGroup = CC409C551DD3E77D005D5AEF /* Products */;
+			mainGroup = CCA74F2C1DD3F8F000804AB6;
+			productRefGroup = CCA74F361DD3F8F000804AB6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CC409C531DD3E77D005D5AEF /* Lab 4 - Practical Queue Application */,
+				CCA74F341DD3F8F000804AB6 /* Lab 4 - Practical Queue Application */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CC409C501DD3E77D005D5AEF /* Sources */ = {
+		CCA74F311DD3F8F000804AB6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCA74F421DD3F92700804AB6 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		CC409C591DD3E77D005D5AEF /* Debug */ = {
+		CCA74F3A1DD3F8F000804AB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -160,7 +177,7 @@
 			};
 			name = Debug;
 		};
-		CC409C5A1DD3E77D005D5AEF /* Release */ = {
+		CCA74F3B1DD3F8F000804AB6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -200,14 +217,14 @@
 			};
 			name = Release;
 		};
-		CC409C5C1DD3E77D005D5AEF /* Debug */ = {
+		CCA74F3D1DD3F8F000804AB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		CC409C5D1DD3E77D005D5AEF /* Release */ = {
+		CCA74F3E1DD3F8F000804AB6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -217,24 +234,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CC409C4F1DD3E77D005D5AEF /* Build configuration list for PBXProject "Lab 4 - Practical Queue Application" */ = {
+		CCA74F301DD3F8F000804AB6 /* Build configuration list for PBXProject "Lab 4 - Practical Queue Application" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CC409C591DD3E77D005D5AEF /* Debug */,
-				CC409C5A1DD3E77D005D5AEF /* Release */,
+				CCA74F3A1DD3F8F000804AB6 /* Debug */,
+				CCA74F3B1DD3F8F000804AB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC409C5B1DD3E77D005D5AEF /* Build configuration list for PBXNativeTarget "Lab 4 - Practical Queue Application" */ = {
+		CCA74F3C1DD3F8F000804AB6 /* Build configuration list for PBXNativeTarget "Lab 4 - Practical Queue Application" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CC409C5C1DD3E77D005D5AEF /* Debug */,
-				CC409C5D1DD3E77D005D5AEF /* Release */,
+				CCA74F3D1DD3F8F000804AB6 /* Debug */,
+				CCA74F3E1DD3F8F000804AB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CC409C4C1DD3E77D005D5AEF /* Project object */;
+	rootObject = CCA74F2D1DD3F8F000804AB6 /* Project object */;
 }

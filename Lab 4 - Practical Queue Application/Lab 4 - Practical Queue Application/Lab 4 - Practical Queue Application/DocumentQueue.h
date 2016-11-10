@@ -9,5 +9,15 @@
 #ifndef DocumentQueue_h
 #define DocumentQueue_h
 
+#include <fstream>
+#include "QueueInterface.h"
+
+using namespace std;
+
+class DocumentQueueLinkedList
+{
+	
+};
+
 
 #endif /* DocumentQueue_h */
