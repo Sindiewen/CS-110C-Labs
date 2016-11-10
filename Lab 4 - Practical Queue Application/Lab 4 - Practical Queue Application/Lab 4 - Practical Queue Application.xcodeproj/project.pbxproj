@@ -24,9 +24,10 @@
 
 /* Begin PBXFileReference section */
 		CCA74F351DD3F8F000804AB6 /* Lab 4 - Practical Queue Application */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lab 4 - Practical Queue Application"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCA74F3F1DD3F92700804AB6 /* DocumentQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentQueue.h; sourceTree = "<group>"; };
 		CCA74F401DD3F92700804AB6 /* QueueInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueInterface.h; sourceTree = "<group>"; };
 		CCA74F411DD3F92700804AB6 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CCB884361DD5294600DC3275 /* LinkedQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedQueue.h; sourceTree = "<group>"; };
+		CCB884371DD5294600DC3275 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				CCA74F411DD3F92700804AB6 /* main.cpp */,
-				CCA74F3F1DD3F92700804AB6 /* DocumentQueue.h */,
+				CCB884361DD5294600DC3275 /* LinkedQueue.h */,
+				CCB884371DD5294600DC3275 /* Node.h */,
 				CCA74F401DD3F92700804AB6 /* QueueInterface.h */,
 			);
 			path = "Lab 4 - Practical Queue Application";
@@ -250,6 +252,7 @@
 				CCA74F3E1DD3F8F000804AB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

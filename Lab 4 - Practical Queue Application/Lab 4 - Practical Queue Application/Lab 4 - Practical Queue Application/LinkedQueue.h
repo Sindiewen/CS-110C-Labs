@@ -137,8 +137,8 @@ void LinkedQueue<ItemType>::dequeue()
     // Only 1 value inside the queue
     if (frontPtr == backPtr)
     {
-        frontPtr == nullptr;
-        backPtr == nullptr;
+        frontPtr = nullptr;
+        backPtr = nullptr;
     }
     else
     {
@@ -150,6 +150,8 @@ void LinkedQueue<ItemType>::dequeue()
     delete nodeToDeletePtr;
     nodeToDeletePtr = nullptr;
 }
+
+
 
 
 #endif /* LinkedQueue_h */
