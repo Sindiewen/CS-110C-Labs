@@ -23,7 +23,7 @@ public:
 	virtual void dequeue() = 0;
 	
 	// Returns the first value from the front of the queue
-	virtual ITemType peekFront() const = 0;
+	virtual ItemType peekFront() const = 0;
 	
 	
 };

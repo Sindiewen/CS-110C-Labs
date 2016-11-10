@@ -7,10 +7,33 @@
 //
 
 #include <iostream>
-#include "DocumentQueue.h"
+#include "LinkedQueue.h"
 
-int main(int argc, const char * argv[]) {
+using namespace std;
+
+int main()
+{
 	// insert code here...
-	std::cout << "Hello, World !!!!\n";
+	cout << "Hello, World" << endl;
+
+    LinkedQueue <int>myQueue;
+
+    for (int i = 0; i < 10; i++)
+    {
+        myQueue.enqueue(i*3);
+    }
+
+    for (int i = 0; i < 10; i++)
+    {
+        cout << "Dequeue " << i << ": " << myQueue.peekFront() << endl;
+        myQueue.dequeue();
+    }
+
+
+
+
+
+
+    // Ends program
     return 0;
 }
