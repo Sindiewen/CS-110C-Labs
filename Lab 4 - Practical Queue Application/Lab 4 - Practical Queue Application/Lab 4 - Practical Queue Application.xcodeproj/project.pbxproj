@@ -6,10 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		CC409C581DD3E77D005D5AEF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC409C571DD3E77D005D5AEF /* main.cpp */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		CC409C521DD3E77D005D5AEF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -24,7 +20,7 @@
 
 /* Begin PBXFileReference section */
 		CC409C541DD3E77D005D5AEF /* Lab 4 - Practical Queue Application */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lab 4 - Practical Queue Application"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC409C571DD3E77D005D5AEF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CC409C5E1DD3E83C005D5AEF /* Code */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Code; path = ../Code; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,8 +37,8 @@
 		CC409C4B1DD3E77D005D5AEF = {
 			isa = PBXGroup;
 			children = (
-				CC409C561DD3E77D005D5AEF /* Lab 4 - Practical Queue Application */,
 				CC409C551DD3E77D005D5AEF /* Products */,
+				CC409C5E1DD3E83C005D5AEF /* Code */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,14 +48,6 @@
 				CC409C541DD3E77D005D5AEF /* Lab 4 - Practical Queue Application */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		CC409C561DD3E77D005D5AEF /* Lab 4 - Practical Queue Application */ = {
-			isa = PBXGroup;
-			children = (
-				CC409C571DD3E77D005D5AEF /* main.cpp */,
-			);
-			path = "Lab 4 - Practical Queue Application";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +107,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC409C581DD3E77D005D5AEF /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
