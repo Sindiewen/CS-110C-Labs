@@ -125,6 +125,7 @@ void LinkedQueue<ItemType>::enqueue(const ItemType &newEntry)
         // Inserts node to the back of the queue
         backPtr->setNext(newNodePtr);
     }
+    backPtr = newNodePtr;   // New node is the back node
 }
 
 // dequeue - Removes value from the back of the queue
@@ -151,6 +152,13 @@ void LinkedQueue<ItemType>::dequeue()
     nodeToDeletePtr = nullptr;
 }
 
+// PeekFront - Returns the front value in the queue
+template <typename ItemType>
+ItemType LinkedQueue<ItemType>::peekFront() const
+{
+    // Returns the front value in the queue
+    return frontPtr->getItem();
+}
 
 
 

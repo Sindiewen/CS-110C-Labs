@@ -20,7 +20,8 @@ int main()
 
     for (int i = 0; i < 10; i++)
     {
-        myQueue.enqueue(i*3);
+        //cout << "Enqueue " << i << endl;
+        myQueue.enqueue(i);
     }
 
     for (int i = 0; i < 10; i++)
