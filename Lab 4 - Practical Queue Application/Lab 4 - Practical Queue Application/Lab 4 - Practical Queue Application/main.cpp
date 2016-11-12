@@ -7,26 +7,49 @@
 //
 
 #include <iostream>
+#include <fstream>
 #include "LinkedQueue.h"
 
 using namespace std;
 
 int main()
 {
-	// insert code here...
-	cout << "Hello, World" << endl;
-
-    LinkedQueue <int>myQueue;
-
+	// Variables
+	string tempStr;			// Stores a temporary string
+	int	wordCount = 0;		// Stores total ammount of words sucessfully copied into the queue
+	
+	// Objects
+	LinkedQueue <string>myQueue;
+	ifstream fin;		// Creates a input filestream Object
+	
+	// Opens file
+	fin.open("inputfile.txt");
+	if (!fin.is_open())
+	{
+		cout << "File failed to open." << endl;
+		return 1;
+	}
+	
+	/*
     for (int i = 0; i < 10; i++)
     {
-        //cout << "Enqueue " << i << endl;
-        myQueue.enqueue(i);
-    }
+		cout << "Input string " << i << ": ";
+		cin  >> inputStr;
+        myQueue.enqueue(inputStr);
+    }*/
 
-    for (int i = 0; i < 10; i++)
+
+	while (fin >> tempStr)
+	{
+		//fin >> tempStr;
+		cout << "input" << endl;
+		myQueue.enqueue(tempStr);
+		wordCount++;
+	}
+
+	for (int i = 0; i < wordCount; i++)
     {
-        cout << "Dequeue " << i << ": " << myQueue.peekFront() << endl;
+        cout << myQueue.peekFront() << " ";
         myQueue.dequeue();
     }
 

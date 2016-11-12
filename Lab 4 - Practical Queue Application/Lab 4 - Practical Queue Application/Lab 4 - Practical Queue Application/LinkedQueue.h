@@ -9,7 +9,6 @@
 #ifndef LinkedQueue_h
 #define LinkedQueue_h
 
-#include <fstream>
 #include "QueueInterface.h"
 #include "Node.h"
 
@@ -36,7 +35,9 @@ public:
     ItemType peekFront() const;                 // Returns the item currently at the front of the queue.
 };
 
+
 ////    Linked Queue Implementation     ////
+
 
 // Class Constructor
 template <typename ItemType>
@@ -45,6 +46,7 @@ LinkedQueue<ItemType>::LinkedQueue() : frontPtr(nullptr), backPtr(nullptr)
     // When Linked Queue object is created with no parameters, ensures
     // the front and the back pointers are empty as null
 }
+
 
 template <typename ItemType>
 LinkedQueue<ItemType>::LinkedQueue(const LinkedQueue<ItemType> &aQueue)
@@ -86,7 +88,9 @@ LinkedQueue<ItemType>::LinkedQueue(const LinkedQueue<ItemType> &aQueue)
     }
 }
 
-// Class Destructor// Inserts into an empty queue
+
+// Class Destructor// 
+// Inserts into an empty queue
 template <typename ItemType>
 LinkedQueue<ItemType>::~LinkedQueue()
 {
@@ -98,6 +102,7 @@ LinkedQueue<ItemType>::~LinkedQueue()
     }
 }
 
+
 // Checks if the queue is empty
 template <typename ItemType>
 bool LinkedQueue<ItemType>::isEmpty() const
@@ -105,6 +110,7 @@ bool LinkedQueue<ItemType>::isEmpty() const
     // Returns if frontPtr is either null or not
     return frontPtr == nullptr;
 }
+
 
 // Enqueue - Adds an item to the back of the queue
 template <typename ItemType>
@@ -127,6 +133,7 @@ void LinkedQueue<ItemType>::enqueue(const ItemType &newEntry)
     }
     backPtr = newNodePtr;   // New node is the back node
 }
+
 
 // dequeue - Removes value from the back of the queue
 template <typename ItemType>
@@ -152,6 +159,7 @@ void LinkedQueue<ItemType>::dequeue()
     nodeToDeletePtr = nullptr;
 }
 
+
 // PeekFront - Returns the front value in the queue
 template <typename ItemType>
 ItemType LinkedQueue<ItemType>::peekFront() const
@@ -160,6 +168,6 @@ ItemType LinkedQueue<ItemType>::peekFront() const
     return frontPtr->getItem();
 }
 
-
+// 
 
 #endif /* LinkedQueue_h */
