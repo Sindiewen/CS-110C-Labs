@@ -1,5 +1,5 @@
 //
-// Created by rachie on 10/7/16.
+// Created by Rachel Vancleave on 10/7/16.
 //
 /*
  * Node.h
