@@ -1,0 +1,3 @@
+Arithmetic expressions.  The operators *, /, and % have the same precedence, { A list of all C++ operators and their precedences appears inside the back cover of this book. } which is higher than that of + and -; unary operators have a higher precedence than binary operators. { A unary operator requires only one operand, for example, the - in -5.  A binary operator requires two operands, for example, the + in 2 + 3. }
+
+File extensions.  By convention, the name of a header file associated with a user defined library ends in .h. { Other conventions, such as .hpp or .hxx, exist. }  Typically, the name of an implementation file ends in .cpp. { Other conventions, such as .C, .cp, or .cxx, exist. }
