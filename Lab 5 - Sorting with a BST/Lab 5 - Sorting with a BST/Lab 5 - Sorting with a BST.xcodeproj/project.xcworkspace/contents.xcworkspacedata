@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Lab 5: Sorting Months in a BST.xcodeproj">
+      location = "self:Lab 5 - Sorting with a BST.xcodeproj">
    </FileRef>
 </Workspace>

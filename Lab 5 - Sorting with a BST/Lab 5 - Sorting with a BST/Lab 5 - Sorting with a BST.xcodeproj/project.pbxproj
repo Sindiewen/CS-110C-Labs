@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC37215F1DDE4BE60007D7B1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC37215E1DDE4BE60007D7B1 /* main.cpp */; };
+		CC57B1AA1DE3B48900D1354C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC57B1A91DE3B48900D1354C /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CC3721591DDE4BE50007D7B1 /* CopyFiles */ = {
+		CC57B1A41DE3B48900D1354C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CC37215B1DDE4BE60007D7B1 /* Lab 5: Sorting Months in a BST */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lab 5: Sorting Months in a BST"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC37215E1DDE4BE60007D7B1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CC57B1A61DE3B48900D1354C /* Lab 5 - Sorting with a BST */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lab 5 - Sorting with a BST"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC57B1A91DE3B48900D1354C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CC3721581DDE4BE50007D7B1 /* Frameworks */ = {
+		CC57B1A31DE3B48900D1354C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,95 +38,95 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CC3721521DDE4BE50007D7B1 = {
+		CC57B19D1DE3B48900D1354C = {
 			isa = PBXGroup;
 			children = (
-				CC37215D1DDE4BE60007D7B1 /* Lab 5: Sorting Months in a BST */,
-				CC37215C1DDE4BE60007D7B1 /* Products */,
+				CC57B1A81DE3B48900D1354C /* Lab 5 - Sorting with a BST */,
+				CC57B1A71DE3B48900D1354C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CC37215C1DDE4BE60007D7B1 /* Products */ = {
+		CC57B1A71DE3B48900D1354C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CC37215B1DDE4BE60007D7B1 /* Lab 5: Sorting Months in a BST */,
+				CC57B1A61DE3B48900D1354C /* Lab 5 - Sorting with a BST */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CC37215D1DDE4BE60007D7B1 /* Lab 5: Sorting Months in a BST */ = {
+		CC57B1A81DE3B48900D1354C /* Lab 5 - Sorting with a BST */ = {
 			isa = PBXGroup;
 			children = (
-				CC37215E1DDE4BE60007D7B1 /* main.cpp */,
+				CC57B1A91DE3B48900D1354C /* main.cpp */,
 			);
-			path = "Lab 5: Sorting Months in a BST";
+			path = "Lab 5 - Sorting with a BST";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CC37215A1DDE4BE50007D7B1 /* Lab 5: Sorting Months in a BST */ = {
+		CC57B1A51DE3B48900D1354C /* Lab 5 - Sorting with a BST */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC3721621DDE4BE60007D7B1 /* Build configuration list for PBXNativeTarget "Lab 5: Sorting Months in a BST" */;
+			buildConfigurationList = CC57B1AD1DE3B48900D1354C /* Build configuration list for PBXNativeTarget "Lab 5 - Sorting with a BST" */;
 			buildPhases = (
-				CC3721571DDE4BE50007D7B1 /* Sources */,
-				CC3721581DDE4BE50007D7B1 /* Frameworks */,
-				CC3721591DDE4BE50007D7B1 /* CopyFiles */,
+				CC57B1A21DE3B48900D1354C /* Sources */,
+				CC57B1A31DE3B48900D1354C /* Frameworks */,
+				CC57B1A41DE3B48900D1354C /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Lab 5: Sorting Months in a BST";
-			productName = "Lab 5: Sorting Months in a BST";
-			productReference = CC37215B1DDE4BE60007D7B1 /* Lab 5: Sorting Months in a BST */;
+			name = "Lab 5 - Sorting with a BST";
+			productName = "Lab 5 - Sorting with a BST";
+			productReference = CC57B1A61DE3B48900D1354C /* Lab 5 - Sorting with a BST */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CC3721531DDE4BE50007D7B1 /* Project object */ = {
+		CC57B19E1DE3B48900D1354C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Rachel Vancleave";
 				TargetAttributes = {
-					CC37215A1DDE4BE50007D7B1 = {
+					CC57B1A51DE3B48900D1354C = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = CC3721561DDE4BE50007D7B1 /* Build configuration list for PBXProject "Lab 5: Sorting Months in a BST" */;
+			buildConfigurationList = CC57B1A11DE3B48900D1354C /* Build configuration list for PBXProject "Lab 5 - Sorting with a BST" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = CC3721521DDE4BE50007D7B1;
-			productRefGroup = CC37215C1DDE4BE60007D7B1 /* Products */;
+			mainGroup = CC57B19D1DE3B48900D1354C;
+			productRefGroup = CC57B1A71DE3B48900D1354C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CC37215A1DDE4BE50007D7B1 /* Lab 5: Sorting Months in a BST */,
+				CC57B1A51DE3B48900D1354C /* Lab 5 - Sorting with a BST */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CC3721571DDE4BE50007D7B1 /* Sources */ = {
+		CC57B1A21DE3B48900D1354C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC37215F1DDE4BE60007D7B1 /* main.cpp in Sources */,
+				CC57B1AA1DE3B48900D1354C /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		CC3721601DDE4BE60007D7B1 /* Debug */ = {
+		CC57B1AB1DE3B48900D1354C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -173,7 +173,7 @@
 			};
 			name = Debug;
 		};
-		CC3721611DDE4BE60007D7B1 /* Release */ = {
+		CC57B1AC1DE3B48900D1354C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -213,14 +213,14 @@
 			};
 			name = Release;
 		};
-		CC3721631DDE4BE60007D7B1 /* Debug */ = {
+		CC57B1AE1DE3B48900D1354C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		CC3721641DDE4BE60007D7B1 /* Release */ = {
+		CC57B1AF1DE3B48900D1354C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -230,24 +230,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CC3721561DDE4BE50007D7B1 /* Build configuration list for PBXProject "Lab 5: Sorting Months in a BST" */ = {
+		CC57B1A11DE3B48900D1354C /* Build configuration list for PBXProject "Lab 5 - Sorting with a BST" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CC3721601DDE4BE60007D7B1 /* Debug */,
-				CC3721611DDE4BE60007D7B1 /* Release */,
+				CC57B1AB1DE3B48900D1354C /* Debug */,
+				CC57B1AC1DE3B48900D1354C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC3721621DDE4BE60007D7B1 /* Build configuration list for PBXNativeTarget "Lab 5: Sorting Months in a BST" */ = {
+		CC57B1AD1DE3B48900D1354C /* Build configuration list for PBXNativeTarget "Lab 5 - Sorting with a BST" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CC3721631DDE4BE60007D7B1 /* Debug */,
-				CC3721641DDE4BE60007D7B1 /* Release */,
+				CC57B1AE1DE3B48900D1354C /* Debug */,
+				CC57B1AF1DE3B48900D1354C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CC3721531DDE4BE50007D7B1 /* Project object */;
+	rootObject = CC57B19E1DE3B48900D1354C /* Project object */;
 }

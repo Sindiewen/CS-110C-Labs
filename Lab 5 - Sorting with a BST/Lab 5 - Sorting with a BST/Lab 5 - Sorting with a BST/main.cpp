@@ -1,8 +1,8 @@
 //
 //  main.cpp
-//  Lab 5: Sorting Months in a BST
+//  Lab 5 - Sorting with a BST
 //
-//  Created by Rachel Vancleave on 11/17/16.
+//  Created by Rachel Vancleave on 11/21/16.
 //  Copyright © 2016 Rachel Vancleave. All rights reserved.
 //
 
