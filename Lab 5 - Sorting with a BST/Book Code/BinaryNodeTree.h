@@ -10,6 +10,7 @@
 
 #include "BinaryTreeInterface.h"
 #include "BinaryNode.h"
+#include "BinaryNodeTree.cpp"
 #include "PrecondViolatedExcep.h"
 #include "NotFoundException.h"
 
@@ -99,5 +100,5 @@ public:
    //------------------------------------------------------------
    BinaryNodeTree& operator=(const BinaryNodeTree& rightHandSide);
 }; // end BinaryNodeTree
-#include "BinaryNodeTree.cpp"
+
 #endif

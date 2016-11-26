@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CC3AE2501DE4FBEE00E99851 /* BinaryTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryTree.h; sourceTree = "<group>"; };
 		CC57B1A61DE3B48900D1354C /* Lab 5 - Sorting with a BST */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lab 5 - Sorting with a BST"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC57B1A91DE3B48900D1354C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				CC57B1A91DE3B48900D1354C /* main.cpp */,
+				CC3AE2501DE4FBEE00E99851 /* BinaryTree.h */,
 			);
 			path = "Lab 5 - Sorting with a BST";
 			sourceTree = "<group>";
@@ -246,6 +248,7 @@
 				CC57B1AF1DE3B48900D1354C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

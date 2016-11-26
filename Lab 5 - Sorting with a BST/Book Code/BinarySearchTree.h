@@ -12,6 +12,7 @@
 #include "BinaryTreeInterface.h"
 #include "BinaryNode.h"
 #include "BinaryNodeTree.h"
+#include "BinarySearchTree.cpp"
 #include "NotFoundException.h"
 #include "PrecondViolatedExcep.h"
 
@@ -91,6 +92,6 @@ public:
    BinarySearchTree<ItemType>& operator=(const BinarySearchTree<ItemType>& rightHandSide);   
 }; // end BinarySearchTree
 
-#include "BinarySearchTree.cpp"
+
 
 #endif
