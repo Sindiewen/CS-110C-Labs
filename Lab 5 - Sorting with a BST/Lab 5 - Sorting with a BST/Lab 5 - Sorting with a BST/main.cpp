@@ -9,8 +9,21 @@
 #include <iostream>
 #include "BinaryTree.h"
 
-int main(int argc, const char * argv[]) {
+using namespace std;
+
+int main(int argc, const char * argv[])
+{
 	// insert code here...
 	std::cout << "Hello, World!\n";
+	
+	if (strcmp("Apple", "Orange"))
+	{
+		cout << "Apples are greater than oranges" << endl;
+	}
+	else
+	{
+		cout << "Oranges are greater than apples" << endl;
+	}
+	
     return 0;
 }
