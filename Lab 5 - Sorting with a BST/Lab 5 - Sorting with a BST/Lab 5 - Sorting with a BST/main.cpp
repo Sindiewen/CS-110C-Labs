@@ -6,15 +6,20 @@
 //  Copyright © 2016 Rachel Vancleave. All rights reserved.
 //
 
+/*
 #include <iostream>
-#include "BinaryTree.h"
+//#include "BinaryTree.h"
+//#include "BST.h"
 
 using namespace std;
 
 int main(int argc, const char * argv[])
 {
+
+	
 	// insert code here...
 	std::cout << "Hello, World!\n";
+
 	
 	if (strcmp("Apple", "Orange"))
 	{
@@ -27,3 +32,4 @@ int main(int argc, const char * argv[])
 	
     return 0;
 }
+*/

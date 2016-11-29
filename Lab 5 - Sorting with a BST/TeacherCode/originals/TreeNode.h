@@ -13,7 +13,7 @@ typedef KeyedItem TreeItemType;
  * Node used in the ADT binary search tree. */
 class TreeNode
 {
-public:
+private:
    TreeNode() {}
    TreeNode(const TreeItemType& nodeItem,
             TreeNode *left = NULL, TreeNode *right = NULL)

@@ -4,7 +4,7 @@ p. 555.
 */
 
 /** @file KeyedItem.h */
-typedef string KeyType;
+typedef desired-type-of-search-key KeyType;
 
 /**  @class KeyedItem
  *   Search key class for the ADT binary search tree. */

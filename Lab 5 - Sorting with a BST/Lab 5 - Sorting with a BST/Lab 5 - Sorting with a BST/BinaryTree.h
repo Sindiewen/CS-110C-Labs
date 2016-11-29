@@ -9,10 +9,6 @@
 #ifndef BinaryTree_h
 #define BinaryTree_h
 
-#include <iostream>
-
-using namespace std;
-
 template <typename ItemType>
 class BinaryTree
 {
