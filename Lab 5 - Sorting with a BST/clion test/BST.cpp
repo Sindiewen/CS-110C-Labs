@@ -3,6 +3,7 @@ Walls & Mirrors, Fifth Edition, Pearson Education, Inc., 2007,
 pp. 559-563. */
 
 /** @file BST.cpp. */
+/*
 #include <cstddef>   // definition of NULL
 #include <new>       // for bad_alloc
 #include "BST.h"     // header file
@@ -150,149 +151,55 @@ void BinarySearchTree::deleteNodeItem(TreeNode *& nodePtr)
    // there are two children:
    // retrieve and delete the inorder successor
    else
-   {  processLeftmost(nodePtr->rightChildPtr,
-                      replacementItem);
-      nodePtr->item = replacementItem;
+   {
+	   processLeftmost(nodePtr->rightChildPtr, replacementItem);
+	   nodePtr->item = replacementItem;
    }  // end if two children
 }  // end deleteNodeItem
 
 void BinarySearchTree::processLeftmost(TreeNode *& nodePtr, TreeItemType& treeItem)
 {
    if (nodePtr->leftChildPtr == NULL)
-   {  treeItem = nodePtr->item;
-      TreeNode *delPtr = nodePtr;
-      nodePtr = nodePtr->rightChildPtr;
-      delPtr->rightChildPtr = NULL;  // defense
-      delete delPtr;
+   {
+	   treeItem = nodePtr->item;
+	   TreeNode *delPtr = nodePtr;
+	   nodePtr = nodePtr->rightChildPtr;
+	   delPtr->rightChildPtr = NULL;  // defense
+	   delete delPtr;
    }
 
    else
-      processLeftmost(nodePtr->leftChildPtr, treeItem);
+   {
+	   processLeftmost(nodePtr->leftChildPtr, treeItem);
+   }
 }  // end processLeftmost
 
-void BinarySearchTree::retrieveItem(TreeNode *treePtr,
-                                    KeyType searchKey,
-                                    TreeItemType& treeItem) const
-   throw(TreeException)
+void BinarySearchTree::retrieveItem(TreeNode *treePtr, KeyType searchKey, TreeItemType& treeItem) const
+throw(TreeException)
 {
    if (treePtr == NULL)
       throw TreeException("TreeException: searchKey not found");
 
    else if (searchKey == treePtr->item.getKey())
-      // item is in the root of some subtree
-      treeItem = treePtr->item;
+   {
+       // item is in the root of some subtree
+       treeItem = treePtr->item;
+   }
 
    else if (searchKey < treePtr->item.getKey())
-      // search the left subtree
-      retrieveItem(treePtr->leftChildPtr,
-                   searchKey, treeItem);
+   {
+       // search the left subtree
+	   retrieveItem(treePtr->leftChildPtr, searchKey, treeItem);
+   }
 
    else  // search the right subtree
-      retrieveItem(treePtr->rightChildPtr,
-                          searchKey, treeItem);
+   {
+	   retrieveItem(treePtr->rightChildPtr, searchKey, treeItem);
+   }
 }  // end retrieveItem
-
+*/
 // Implementations of copyTree, destroyTree, preorder,
 // inorder, postorder, setRootPtr, rootPtr, getChildPtrs,
 // setChildPtrs, and the overloaded assignment operator are
 // the same as for the ADT binary tree.
-
-void BinarySearchTree::copyTree(TreeNode *treePtr, TreeNode *& newTreePtr) const
-	throw(TreeException)
-{
-	// preorder traversal
-	if (treePtr != NULL)
-	{  // copy node
-		try
-		{
-			newTreePtr = new TreeNode(treePtr->item, NULL, NULL);
-			copyTree(treePtr->leftChildPtr, newTreePtr->leftChildPtr);
-			copyTree(treePtr->rightChildPtr, newTreePtr->rightChildPtr);
-		}
-		catch (bad_alloc e)
-		{
-			throw TreeException("TreeException: copyTree cannot allocate memory");
-		}  // `end try
-	}
-	else
-		newTreePtr = NULL;  // copy empty tree
-}
-
-void BinarySearchTree::destroyTree(TreeNode*& treePtr)
-{
-	// postorder traversal
-	if (treePtr != NULL)
-	{
-		destroyTree(treePtr->leftChildPtr);
-		destroyTree(treePtr->rightChildPtr);
-		delete treePtr;
-		treePtr = NULL;
-	}  // end if
-}
-
-void BinarySearchTree::preorder(TreeNode *treePtr, FunctionType visit)
-{
-	if (treePtr != nullptr)
-	{
-		visit(treePtr->item);
-		preorder(treePtr->leftChildPtr, visit);
-		preorder(treePtr->rightChildPtr, visit);
-	}
-}
-
-void BinarySearchTree::inorder(TreeNode *treePtr, FunctionType visit)
-{
-	if (treePtr != nullptr)
-	{
-		inorder(treePtr->leftChildPtr, visit);
-		
-		visit(treePtr->item);
-		
-		inorder(treePtr->rightChildPtr, visit);
-	}
-}
-
-void BinarySearchTree::postorder(TreeNode *treePtr, FunctionType visit)
-{
-	if (treePtr != nullptr)
-	{
-		postorder(treePtr->leftChildPtr, visit);
-		postorder(treePtr->rightChildPtr, visit);
-		
-		visit(treePtr->item);
-	}
-}
-
-TreeNode *BinarySearchTree::rootPtr() const
-{
-	return root;
-}
-
-void BinarySearchTree::setRootPtr(TreeNode *newRoot)
-{
-	root = newRoot;
-}
-
-void BinarySearchTree::getChildPtrs(TreeNode *nodePtr, TreeNode *& leftChildPtr, TreeNode *& rightChildPtr) const
-{
-	leftChildPtr = nodePtr->leftChildPtr;
-	rightChildPtr = nodePtr->rightChildPtr;
-}
-
-void BinarySearchTree::setChildPtrs(TreeNode *nodePtr, TreeNode *leftChildPtr, TreeNode *rightChildPtr)
-{
-	nodePtr->leftChildPtr = leftChildPtr;
-	nodePtr->rightChildPtr = rightChildPtr;
-}
-
-BinarySearchTree& BinarySearchTree::operator=(const BinarySearchTree& rhs) throw(TreeException)
-{
-	if (this != &rhs)
-	{
-		destroyTree(root);  // deallocate left-hand side
-		copyTree(rhs.root, root);  // copy right-hand side
-	}  // end if
-	return *this;
-}
-
 // End of implementation file.

@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CC57B1AA1DE3B48900D1354C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC57B1A91DE3B48900D1354C /* main.cpp */; };
-		CC6CCC151DEF193D00D9B2EB /* BinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC6CCC131DEF193D00D9B2EB /* BinaryTree.cpp */; };
-		CC6CCC161DEF193D00D9B2EB /* BST.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC6CCC141DEF193D00D9B2EB /* BST.cpp */; };
+		CCB0D8931DEF36E700BFA1AB /* BinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCB0D8911DEF36E700BFA1AB /* BinaryTree.cpp */; };
+		CCB0D8941DEF36E700BFA1AB /* BST.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCB0D8921DEF36E700BFA1AB /* BST.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,13 +27,13 @@
 /* Begin PBXFileReference section */
 		CC57B1A61DE3B48900D1354C /* Lab 5 - Sorting with a BST */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lab 5 - Sorting with a BST"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC57B1A91DE3B48900D1354C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		CC6CCC0E1DEF193D00D9B2EB /* BinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryTree.h; sourceTree = "<group>"; };
-		CC6CCC0F1DEF193D00D9B2EB /* BST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BST.h; sourceTree = "<group>"; };
-		CC6CCC101DEF193D00D9B2EB /* KeyedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyedItem.h; sourceTree = "<group>"; };
-		CC6CCC111DEF193D00D9B2EB /* TreeException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeException.h; sourceTree = "<group>"; };
-		CC6CCC121DEF193D00D9B2EB /* TreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeNode.h; sourceTree = "<group>"; };
-		CC6CCC131DEF193D00D9B2EB /* BinaryTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTree.cpp; sourceTree = "<group>"; };
-		CC6CCC141DEF193D00D9B2EB /* BST.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BST.cpp; sourceTree = "<group>"; };
+		CCB0D88C1DEF36E700BFA1AB /* BinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryTree.h; sourceTree = "<group>"; };
+		CCB0D88D1DEF36E700BFA1AB /* BST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BST.h; sourceTree = "<group>"; };
+		CCB0D88E1DEF36E700BFA1AB /* KeyedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyedItem.h; sourceTree = "<group>"; };
+		CCB0D88F1DEF36E700BFA1AB /* TreeException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeException.h; sourceTree = "<group>"; };
+		CCB0D8901DEF36E700BFA1AB /* TreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeNode.h; sourceTree = "<group>"; };
+		CCB0D8911DEF36E700BFA1AB /* BinaryTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTree.cpp; sourceTree = "<group>"; };
+		CCB0D8921DEF36E700BFA1AB /* BST.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BST.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,13 +67,13 @@
 			isa = PBXGroup;
 			children = (
 				CC57B1A91DE3B48900D1354C /* main.cpp */,
-				CC6CCC0E1DEF193D00D9B2EB /* BinaryTree.h */,
-				CC6CCC0F1DEF193D00D9B2EB /* BST.h */,
-				CC6CCC101DEF193D00D9B2EB /* KeyedItem.h */,
-				CC6CCC111DEF193D00D9B2EB /* TreeException.h */,
-				CC6CCC121DEF193D00D9B2EB /* TreeNode.h */,
-				CC6CCC131DEF193D00D9B2EB /* BinaryTree.cpp */,
-				CC6CCC141DEF193D00D9B2EB /* BST.cpp */,
+				CCB0D88C1DEF36E700BFA1AB /* BinaryTree.h */,
+				CCB0D88D1DEF36E700BFA1AB /* BST.h */,
+				CCB0D88E1DEF36E700BFA1AB /* KeyedItem.h */,
+				CCB0D88F1DEF36E700BFA1AB /* TreeException.h */,
+				CCB0D8901DEF36E700BFA1AB /* TreeNode.h */,
+				CCB0D8911DEF36E700BFA1AB /* BinaryTree.cpp */,
+				CCB0D8921DEF36E700BFA1AB /* BST.cpp */,
 			);
 			path = "Lab 5 - Sorting with a BST";
 			sourceTree = "<group>";
@@ -135,8 +135,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC6CCC161DEF193D00D9B2EB /* BST.cpp in Sources */,
-				CC6CCC151DEF193D00D9B2EB /* BinaryTree.cpp in Sources */,
+				CCB0D8941DEF36E700BFA1AB /* BST.cpp in Sources */,
+				CCB0D8931DEF36E700BFA1AB /* BinaryTree.cpp in Sources */,
 				CC57B1AA1DE3B48900D1354C /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
