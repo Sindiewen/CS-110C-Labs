@@ -23,7 +23,7 @@ void BinarySearchTree::insert(int data)
 		return;
 	}
 	BinaryNode *current = root;
-	BinaryNode *parent;
+	BinaryNode *parent  = nullptr;
 	while(current != NULL)
 	{
 		parent = current;

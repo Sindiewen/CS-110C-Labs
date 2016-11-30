@@ -15,10 +15,7 @@ class TreeNode
 {
 public:
    TreeNode() {}
-   TreeNode(const TreeItemType& nodeItem,
-            TreeNode *left = NULL, TreeNode *right = NULL)
-      : item(nodeItem), leftChildPtr(left),
-      rightChildPtr(right) {}
+   TreeNode(const TreeItemType& nodeItem, TreeNode *left = NULL, TreeNode *right = NULL) : item(nodeItem),leftChildPtr(left), rightChildPtr(right) {}
 
    /** A data item in the tree. */
    TreeItemType item;

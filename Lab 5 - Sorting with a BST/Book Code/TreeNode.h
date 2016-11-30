@@ -14,17 +14,59 @@ class TreeNode
    
 private:
    ItemType item;        // Data portion
-   int      leftChild;   // Index to left child
-   int      rightChild;  // Index to right child
+   TreeNode<ItemType>      *leftChild;   // Index to left child
+   TreeNode<ItemType>      *rightChild;  // Index to right child
 
 public:
-   TreeNode();
-   TreeNode(const ItemType& nodeItem, int left, int right);
+    TreeNode();
+    TreeNode(const ItemType& nodeItem, TreeNode<ItemType> left, TreeNode<ItemType> right);
+	
+	void setItem(const ItemType& anItem);
+	void setLeft(TreeNode<ItemType> *LeftNextNodePtr);
+	void setRight(TreeNode<ItemType> *RightNextNodePtr);
+	
+	ItemType getItem() const;
+	ItemType getLeft() const;
+	ItemType getRight() const;
+	
    
    // Declarations of the methods setItem, getItem, setLeft, getLeft,
    // setRight, and getRight are here.
 }; // end TreeNode
 
-#include "TreeNode.cpp"
+template <Typename ItemType>
+TreeNode<ItemType>::TreeNode() : leftChild(nullptr), rightChild(nullptr) {
+	
+}
+
+template <typename ItemType>
+TreeNode<ItemType>::TreeNode(const ItemType& nodeItem, TreeNode<ItemType> left, TreeNode<ItemType> right) : item(nodeItem), leftChild(left), rightChild(right){
+	
+}
+
+void setItem(const ItemType& anItem)
+{
+	item = anItem;
+}
+void setLeft(TreeNode<ItemType> *LeftNextNodePtr)
+{
+	leftChild = LeftNextNodePtr;
+}
+
+void setRight(TreeNode<ItemType> *RightNextNodePtr)
+{
+	rightChild = RightNextNodePtr;
+}
+
+ItemType getItem() const
+{
+	return item;
+}
+ItemType getLeft() const;
+ItemType getRight() const;
+
+
+
+//#include "TreeNode.cpp"
 
 #endif 

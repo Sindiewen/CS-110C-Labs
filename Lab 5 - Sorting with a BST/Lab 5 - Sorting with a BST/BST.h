@@ -1,23 +1,18 @@
+//
+//  BST.h
+//  Lab 5 - Sorting with a BST
+//
+//  Created by Rachel Vancleave on 11/28/16.
+//  Copyright © 2016 Rachel Vancleave. All rights reserved.
+//
+
+#ifndef BST_h
+#define BST_h
+
 #include <iostream>
-#include <math.h>
+#include "Node.h"
+
 using namespace std;
-
-template <class T>
-struct Node {
-    T value;
-    Node *left;
-    Node *right;
-
-    Node(T val) {
-        this->value = val;
-    }
-
-    Node(T val, Node<T> left, Node<T> right) {
-        this->value = val;
-        this->left = left;
-        this->right = right;
-    }
-};
 
 template <class T>
 class BST {
@@ -130,46 +125,6 @@ class BST {
     }
 };
 
-int main() {
-    BST<int> *bst = new BST<int>();
-    bst->add(11);
-    bst->add(1);
-    bst->add(6);
-    bst->add(-1);
-    bst->add(-10);
-    bst->add(100);
-    bst->print();
-    cout<<endl;
-    cout<<"Nodes count: "<<bst->nodesCount();
-    cout<<endl;
-    cout<<"Height: "<<bst->height();
-    cout<<endl;
-    cout<<"Max path: ";
-    bst->printMaxPath();
-    cout<<endl;
-    bst->deleteValue(11);
-    cout<<"11 removed: ";
-    bst->print();
-    cout<<endl;
-    cout<<"1 removed: ";
-    bst->deleteValue(1);
-    bst->print();
-    cout<<endl;
-    cout<<"-1 removed: ";
-    bst->deleteValue(-1);
-    bst->print();
-    cout<<endl;
-    cout<<"6 removed: ";
-    bst->deleteValue(6);
-    bst->print();
-    cout<<endl;
-    cout<<"-10 removed: ";
-    bst->deleteValue(-10);
-    bst->print();
-    cout<<endl;
-    cout<<"100 removed: ";
-    bst->deleteValue(100);
-    bst->print();
-    cout<<endl;
-    return 0;
-}
+
+
+#endif /* BST_h */

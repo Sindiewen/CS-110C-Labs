@@ -20,13 +20,13 @@
 class BinaryNode //: public Node
 {
 private:
-	//< Inherits int data from Node
+	///< Inherits int data from Node
 	int data;
 	BinaryNode *leftChild;
 	BinaryNode *rightChild;
 
 public:
-	//< Inherits int getData() from Node 
+	///< Inherits int getData() from Node 
 
 
 	BinaryNode() : data(0), leftChild(NULL), rightChild(NULL)
