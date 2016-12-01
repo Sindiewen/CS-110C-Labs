@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC57B1AA1DE3B48900D1354C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC57B1A91DE3B48900D1354C /* main.cpp */; };
-		CCB0D8931DEF36E700BFA1AB /* BinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCB0D8911DEF36E700BFA1AB /* BinaryTree.cpp */; };
-		CCB0D8941DEF36E700BFA1AB /* BST.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCB0D8921DEF36E700BFA1AB /* BST.cpp */; };
+		CC86277D1DEF74B900C091EC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC86277C1DEF74B900C091EC /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CC57B1A41DE3B48900D1354C /* CopyFiles */ = {
+		CC8627771DEF74B900C091EC /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,19 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CC57B1A61DE3B48900D1354C /* Lab 5 - Sorting with a BST */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lab 5 - Sorting with a BST"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC57B1A91DE3B48900D1354C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		CCB0D88C1DEF36E700BFA1AB /* BinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryTree.h; sourceTree = "<group>"; };
-		CCB0D88D1DEF36E700BFA1AB /* BST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BST.h; sourceTree = "<group>"; };
-		CCB0D88E1DEF36E700BFA1AB /* KeyedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyedItem.h; sourceTree = "<group>"; };
-		CCB0D88F1DEF36E700BFA1AB /* TreeException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeException.h; sourceTree = "<group>"; };
-		CCB0D8901DEF36E700BFA1AB /* TreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeNode.h; sourceTree = "<group>"; };
-		CCB0D8911DEF36E700BFA1AB /* BinaryTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTree.cpp; sourceTree = "<group>"; };
-		CCB0D8921DEF36E700BFA1AB /* BST.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BST.cpp; sourceTree = "<group>"; };
+		CC8627791DEF74B900C091EC /* Lab 5 - Sorting with a BST */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lab 5 - Sorting with a BST"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC86277C1DEF74B900C091EC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CC57B1A31DE3B48900D1354C /* Frameworks */ = {
+		CC8627761DEF74B900C091EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,33 +38,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CC57B19D1DE3B48900D1354C = {
+		CC8627701DEF74B900C091EC = {
 			isa = PBXGroup;
 			children = (
-				CC57B1A81DE3B48900D1354C /* Lab 5 - Sorting with a BST */,
-				CC57B1A71DE3B48900D1354C /* Products */,
+				CC86277B1DEF74B900C091EC /* Lab 5 - Sorting with a BST */,
+				CC86277A1DEF74B900C091EC /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CC57B1A71DE3B48900D1354C /* Products */ = {
+		CC86277A1DEF74B900C091EC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CC57B1A61DE3B48900D1354C /* Lab 5 - Sorting with a BST */,
+				CC8627791DEF74B900C091EC /* Lab 5 - Sorting with a BST */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CC57B1A81DE3B48900D1354C /* Lab 5 - Sorting with a BST */ = {
+		CC86277B1DEF74B900C091EC /* Lab 5 - Sorting with a BST */ = {
 			isa = PBXGroup;
 			children = (
-				CC57B1A91DE3B48900D1354C /* main.cpp */,
-				CCB0D88C1DEF36E700BFA1AB /* BinaryTree.h */,
-				CCB0D88D1DEF36E700BFA1AB /* BST.h */,
-				CCB0D88E1DEF36E700BFA1AB /* KeyedItem.h */,
-				CCB0D88F1DEF36E700BFA1AB /* TreeException.h */,
-				CCB0D8901DEF36E700BFA1AB /* TreeNode.h */,
-				CCB0D8911DEF36E700BFA1AB /* BinaryTree.cpp */,
-				CCB0D8921DEF36E700BFA1AB /* BST.cpp */,
+				CC86277C1DEF74B900C091EC /* main.cpp */,
 			);
 			path = "Lab 5 - Sorting with a BST";
 			sourceTree = "<group>";
@@ -81,13 +65,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CC57B1A51DE3B48900D1354C /* Lab 5 - Sorting with a BST */ = {
+		CC8627781DEF74B900C091EC /* Lab 5 - Sorting with a BST */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC57B1AD1DE3B48900D1354C /* Build configuration list for PBXNativeTarget "Lab 5 - Sorting with a BST" */;
+			buildConfigurationList = CC8627801DEF74B900C091EC /* Build configuration list for PBXNativeTarget "Lab 5 - Sorting with a BST" */;
 			buildPhases = (
-				CC57B1A21DE3B48900D1354C /* Sources */,
-				CC57B1A31DE3B48900D1354C /* Frameworks */,
-				CC57B1A41DE3B48900D1354C /* CopyFiles */,
+				CC8627751DEF74B900C091EC /* Sources */,
+				CC8627761DEF74B900C091EC /* Frameworks */,
+				CC8627771DEF74B900C091EC /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -95,56 +79,54 @@
 			);
 			name = "Lab 5 - Sorting with a BST";
 			productName = "Lab 5 - Sorting with a BST";
-			productReference = CC57B1A61DE3B48900D1354C /* Lab 5 - Sorting with a BST */;
+			productReference = CC8627791DEF74B900C091EC /* Lab 5 - Sorting with a BST */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CC57B19E1DE3B48900D1354C /* Project object */ = {
+		CC8627711DEF74B900C091EC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Rachel Vancleave";
 				TargetAttributes = {
-					CC57B1A51DE3B48900D1354C = {
+					CC8627781DEF74B900C091EC = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = CC57B1A11DE3B48900D1354C /* Build configuration list for PBXProject "Lab 5 - Sorting with a BST" */;
+			buildConfigurationList = CC8627741DEF74B900C091EC /* Build configuration list for PBXProject "Lab 5 - Sorting with a BST" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = CC57B19D1DE3B48900D1354C;
-			productRefGroup = CC57B1A71DE3B48900D1354C /* Products */;
+			mainGroup = CC8627701DEF74B900C091EC;
+			productRefGroup = CC86277A1DEF74B900C091EC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CC57B1A51DE3B48900D1354C /* Lab 5 - Sorting with a BST */,
+				CC8627781DEF74B900C091EC /* Lab 5 - Sorting with a BST */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CC57B1A21DE3B48900D1354C /* Sources */ = {
+		CC8627751DEF74B900C091EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCB0D8941DEF36E700BFA1AB /* BST.cpp in Sources */,
-				CCB0D8931DEF36E700BFA1AB /* BinaryTree.cpp in Sources */,
-				CC57B1AA1DE3B48900D1354C /* main.cpp in Sources */,
+				CC86277D1DEF74B900C091EC /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		CC57B1AB1DE3B48900D1354C /* Debug */ = {
+		CC86277E1DEF74B900C091EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -191,7 +173,7 @@
 			};
 			name = Debug;
 		};
-		CC57B1AC1DE3B48900D1354C /* Release */ = {
+		CC86277F1DEF74B900C091EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -231,14 +213,14 @@
 			};
 			name = Release;
 		};
-		CC57B1AE1DE3B48900D1354C /* Debug */ = {
+		CC8627811DEF74B900C091EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		CC57B1AF1DE3B48900D1354C /* Release */ = {
+		CC8627821DEF74B900C091EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -248,25 +230,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CC57B1A11DE3B48900D1354C /* Build configuration list for PBXProject "Lab 5 - Sorting with a BST" */ = {
+		CC8627741DEF74B900C091EC /* Build configuration list for PBXProject "Lab 5 - Sorting with a BST" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CC57B1AB1DE3B48900D1354C /* Debug */,
-				CC57B1AC1DE3B48900D1354C /* Release */,
+				CC86277E1DEF74B900C091EC /* Debug */,
+				CC86277F1DEF74B900C091EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC57B1AD1DE3B48900D1354C /* Build configuration list for PBXNativeTarget "Lab 5 - Sorting with a BST" */ = {
+		CC8627801DEF74B900C091EC /* Build configuration list for PBXNativeTarget "Lab 5 - Sorting with a BST" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CC57B1AE1DE3B48900D1354C /* Debug */,
-				CC57B1AF1DE3B48900D1354C /* Release */,
+				CC8627811DEF74B900C091EC /* Debug */,
+				CC8627821DEF74B900C091EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CC57B19E1DE3B48900D1354C /* Project object */;
+	rootObject = CC8627711DEF74B900C091EC /* Project object */;
 }
