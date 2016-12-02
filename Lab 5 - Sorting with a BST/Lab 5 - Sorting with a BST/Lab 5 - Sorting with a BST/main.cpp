@@ -1,26 +1,26 @@
 #include <iostream>
 #include <iomanip>
 #include <fstream>
-#include "BSTNode.h"
+#include "BSTImplementation.h"
 
 using namespace std;
 
 // Function prototypes
-BstNode* Insert (BstNode *root, string data);      // Inserts data to the tree
-bool Search     (BstNode *root, string data);      // Searches the tree for new data
+//BstNode* Insert (BstNode *root, string data);      // Inserts data to the tree
+//bool Search     (BstNode *root, string data);      // Searches the tree for new data
 void printTreeToConsole(BstNode *root, int indent);
 void printDataInOrder(BstNode *root);
 
 int main()
 {
+	// Objects
+	BinarySearchTree<string> myBst;
     BstNode *root = nullptr;    // Creates an empty tree with no data
+	fstream fin;				// Creates File Input Stream Object
 
-    string value;
-	
-	fstream fin;
-	
-	// String to recieve file input
-	string fileInput;
+	// Variables
+    string value;				// Stores the string from the file
+	string fileInput;			// String to recieve file input
 	
 	
 	// Opens file
@@ -28,11 +28,8 @@ int main()
 	cout << "Enter name of a file you want sorted: ";
 	cin  >> fileInput;
 	
-	// Checks if file is successfully read
-	// If it fails, close program
-	// Opens file from passed filename
+	// Opens file from entered filename
 	fin.open(fileInput);
-	
 	
 	if (!fin.fail())
 	{
@@ -44,18 +41,27 @@ int main()
 		while (getline(fin, value))
 		{
 			// Stores each line into the tree
-			root = Insert(root, value);
+			
+			myBst.insertValue(value);
+			//root = Insert(root, value);
+			
 		}
+		
+		printTreeToConsole(root, 6);
+		
+		cout << endl;
+		
+		printDataInOrder(root);
 	}
-	printTreeToConsole(root, 6);
+	else
+	{
+		cout << "File was unable to be opened... Closing program." << endl;
+	}
 	
-	cout << endl;
-	
-	printDataInOrder(root);
-	
-    return 0;
+    return fin.fail();
 }
 
+/*
 BstNode* Insert(BstNode *root, string data)
 {
     if (root == nullptr)
@@ -74,6 +80,7 @@ BstNode* Insert(BstNode *root, string data)
     }
     return root;
 }
+ 
 
 bool Search(BstNode *root, string data)
 {
@@ -98,6 +105,7 @@ bool Search(BstNode *root, string data)
         return Search(root->rightPtr, data);
     }
 }
+ */
 
 void printTreeToConsole(BstNode *root, int indent)
 {
