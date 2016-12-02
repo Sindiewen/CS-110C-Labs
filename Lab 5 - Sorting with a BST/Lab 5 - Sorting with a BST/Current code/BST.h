@@ -6,6 +6,8 @@ pp. 556-559.
 /** @file BST.h */
 #include "TreeException.h"
 #include "TreeNode.h"
+#include <fstream>
+#include <iostream>
 
 typedef void (*FunctionType)(TreeItemType& anItem);
 
@@ -16,6 +18,7 @@ typedef void (*FunctionType)(TreeItemType& anItem);
 class BinarySearchTree
 {
 public:
+	
 // constructors and destructor:
    BinarySearchTree();
    BinarySearchTree(const BinarySearchTree& tree)
@@ -80,7 +83,42 @@ public:
 // overloaded operator:
    virtual BinarySearchTree& operator=(const BinarySearchTree& rhs)
       throw(TreeException);
-
+	
+	/////////////////////////////////
+	// Public Lab 5 Implementation //
+	/////////////////////////////////
+	
+	virtual void printTree();
+	//virtual void printTreeInOrder(TreeNode *treePtr, FunctionType visit);
+	
+/*
+	bool readFile(BinarySearchTree& bst, string fileName)
+	{
+		
+		// Opens file from passed filename
+		fin.open(fileName);
+		
+		
+		if (!fin.fail())
+		{
+			// Temporary variable to store
+			//TreeItemType tempData;
+			
+			// Loops through each line of the file
+			// read each line of the file
+			while (getline(fin, tempItem))
+			{
+				// Stores each line into the tree
+				searchTreeInsert(tempItem);
+			}
+		}
+		// Returns if reading the file failed or not
+		return fin.fail();
+	}
+*/	
+	
+	
+	
 protected:
    /** Recursively inserts an item into a binary search tree.
     * @pre treePtr points to a binary search tree, newItem is the
@@ -143,10 +181,19 @@ protected:
    void setChildPtrs(TreeNode *nodePtr,
                      TreeNode *leftChildPtr,
                      TreeNode *rightChildPtr);
+	
+	
+	////////////////////////////////////
+	// Protected Lab 5 Implementation //
+	////////////////////////////////////
+	virtual void printTreeInOrder(TreeNode *treePtr);
+	
 
-private:
+//private:
 	/** Pointer to root of tree. */
 	TreeNode *root;
+	TreeItemType *tempItem;
+	ifstream fin;
 	
 	
 }; // end BinarySearchTree

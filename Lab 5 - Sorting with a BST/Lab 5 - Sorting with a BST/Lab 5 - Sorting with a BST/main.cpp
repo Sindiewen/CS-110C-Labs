@@ -8,7 +8,7 @@
 
 // NOTE: When building and compiling the program, use either g++ or clang++.
 // I've had linker issues using primarily clang as is.
-
+/*
 #include <iostream>
 
 #include "BST.cpp"
@@ -72,11 +72,11 @@ int main()
 	
 	// will prints the binary search tree
 	//printBST.printTree(myStringBST);
-	myStringBST.printTree();
+//	myStringBST.printTree();
 
 	
 	
 	
 	
-    return 0;
-}
+//    return 0;
+//}

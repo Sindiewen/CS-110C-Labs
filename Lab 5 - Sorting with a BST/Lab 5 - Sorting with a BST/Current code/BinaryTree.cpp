@@ -251,23 +251,22 @@ void BinaryTree::copyTree(TreeNode *treePtr,
                           TreeNode *& newTreePtr) const
    throw(TreeException)
 {
-   // preorder traversal
-   if (treePtr != NULL)
-   {  // copy node
-      try
-      {
-	 newTreePtr = new TreeNode(treePtr->item, NULL, NULL);
-	 copyTree(treePtr->leftChildPtr, newTreePtr->leftChildPtr);
-	 copyTree(treePtr->rightChildPtr, newTreePtr->rightChildPtr);
-      }
-      catch (bad_alloc e)
-      {
-	 throw TreeException(
-	    "TreeException: copyTree cannot allocate memory");
-      }  // `end try
-   }
-   else
-      newTreePtr = NULL;  // copy empty tree
+	// preorder traversal
+	if (treePtr != NULL)
+	{  // copy node
+		try
+		{
+			newTreePtr = new TreeNode(treePtr->item, NULL, NULL);
+			copyTree(treePtr->leftChildPtr, newTreePtr->leftChildPtr);
+			copyTree(treePtr->rightChildPtr, newTreePtr->rightChildPtr);
+		}
+		catch (bad_alloc e)
+		{
+			throw TreeException("TreeException: copyTree cannot allocate memory");
+		}  // `end try
+	}
+	else
+		newTreePtr = NULL;  // copy empty tree
 }  // end copyTree
 
 void BinaryTree::destroyTree(TreeNode *& treePtr)
@@ -336,4 +335,5 @@ void BinaryTree::postorder(TreeNode *treePtr,
       visit(treePtr->item);
    } // end if
 }  // end postorder
+
 // End of implementation file.

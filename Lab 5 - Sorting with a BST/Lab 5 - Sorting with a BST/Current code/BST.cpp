@@ -6,6 +6,8 @@ pp. 559-563. */
 #include <cstddef>   // definition of NULL
 #include <new>       // for bad_alloc
 #include "BST.h"     // header file
+#include "DisplayableBST.h"
+//#include <iostream>
 
 using namespace std;
 
@@ -76,12 +78,11 @@ void BinarySearchTree::insertItem(TreeNode *& treePtr,
       // create a new node
       try
       {
-	 treePtr = new TreeNode(newItem, NULL, NULL);
+		  treePtr = new TreeNode(newItem, NULL, NULL);
       }
       catch (bad_alloc e)
       {
-	 throw TreeException(
-	 "TreeException: insertItem cannot allocate memory");
+		  throw TreeException("TreeException: insertItem cannot allocate memory");
       }  // end try
    }
    // else search for the insertion position
@@ -294,5 +295,56 @@ BinarySearchTree& BinarySearchTree::operator=(const BinarySearchTree& rhs) throw
 	}  // end if
 	return *this;
 }
+
+
+
+
+
+
+
+
+	///////////////////////////////////
+	// Lab 5 Function Implementation //
+	///////////////////////////////////
+
+void BinarySearchTree::printTree()
+{
+	printTreeInOrder(root);
+}
+
+void BinarySearchTree::printTreeInOrder(TreeNode *treePtr)
+{
+	// TODO: Test moving code into BST.cpp and see if that helps regarding getting the inorder traversal and printing to work properly
+	// Potential ideas:
+	// - Keep function call here, move implementation to BST.cpp
+	// - Get rid of this class in general and move everything to BST.cpp
+	
+	
+	if (treePtr != nullptr)
+	{
+		//cout << "Tree is not empty" << endl;
+		printTreeInOrder(treePtr->leftChildPtr);
+		//cout << treePtr->item;
+		tempItem = &treePtr->item;
+		cout << &tempItem << endl;
+		printTreeInOrder(treePtr->rightChildPtr);
+	}
+	else
+	{
+		//cout << "Tree is empty" << endl;
+		return;
+	}
+	
+	/*
+		if (root is not empty)
+		{
+	 Print right subtree, increasing indentation by one level
+	 Print contents of root
+	 Print left subtree, increasing indentation by one level
+		}*/
+}
+
+
+
 
 // End of implementation file.
