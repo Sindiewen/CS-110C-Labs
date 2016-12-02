@@ -8,20 +8,19 @@ using namespace std;
 // Function prototypes
 //BstNode* Insert (BstNode *root, string data);      // Inserts data to the tree
 //bool Search     (BstNode *root, string data);      // Searches the tree for new data
-void printTreeToConsole(BstNode *root, int indent);
-void printDataInOrder(BstNode *root);
+//void printTreeToConsole(BstNode *root, int indent);
+//void printDataInOrder(BstNode *root);
 
 int main()
 {
 	// Objects
-	BinarySearchTree<string> myBst;
-    BstNode *root = nullptr;    // Creates an empty tree with no data
+	BinarySearchTree myBst;
+    //BstNode *root = nullptr;    // Creates an empty tree with no data
 	fstream fin;				// Creates File Input Stream Object
 
 	// Variables
     string value;				// Stores the string from the file
 	string fileInput;			// String to recieve file input
-	
 	
 	// Opens file
 	cout << "Welcome to the Tree Sort program!\n";
@@ -41,24 +40,25 @@ int main()
 		while (getline(fin, value))
 		{
 			// Stores each line into the tree
-			
 			myBst.insertValue(value);
-			//root = Insert(root, value);
-			
 		}
 		
-		printTreeToConsole(root, 6);
+		myBst.printTreeHorizontalToConsole(6);
+		cout << endl << endl;
+		myBst.inOrderPrint();
 		
-		cout << endl;
+		//printTreeToConsole(root, 6);
 		
-		printDataInOrder(root);
+		//cout << endl;
+		
+		//printDataInOrder(root);
 	}
 	else
 	{
 		cout << "File was unable to be opened... Closing program." << endl;
 	}
 	
-    return fin.fail();
+	return 0;
 }
 
 /*
@@ -106,7 +106,7 @@ bool Search(BstNode *root, string data)
     }
 }
  */
-
+/*
 void printTreeToConsole(BstNode *root, int indent)
 {
 	
@@ -128,4 +128,4 @@ void printDataInOrder(BstNode *root)
 		printDataInOrder(root->rightPtr);
 	}
 	
-}
+}*/

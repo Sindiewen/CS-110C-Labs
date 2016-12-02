@@ -10,9 +10,11 @@
 #define BSTImplementation_hpp
 
 #include <stdio.h>
+#include <iostream>
 #include "BSTNode.h"
 
-template <typename ItemType>
+using namespace std;
+
 class BinarySearchTree
 {
 public: // Public Class Functions
@@ -22,24 +24,37 @@ public: // Public Class Functions
 	BinarySearchTree();
 	
 	// Inserts a value
-	void insertValue (ItemType data);
+	void insertValue	(string data);
+	
+	// Searches tree for a value
+	bool search			(string data);
+	
+	// Prints BST horizontally to the console
+	void printTreeHorizontalToConsole(int indent);
+	
+	// Tree traversals - Printing data
+	void preOrderPrint	(); // Prints Tree - PreOrder
+	void inOrderPrint	(); // Prints Tree - InOrder
+	void postOrderPrint	(); // Prints Tree - Post Order
 	
 	
 protected:
 	
 	// Inserts data into the BST
-	BstNode* Insert (BstNode *root ,ItemType data);
+	BstNode* Insert (BstNode *&root, const string data);
 	
 	// Searches the BST for a specific value
-	bool Search (BstNode *root, ItemType data);
-	
-	// Traversals: Prints values in directed order
-	void printPreOrder (BstNode *root, ItemType data);
-	void printInOrder  (BstNode *root, ItemType data);
-	void printPostOrder(BstNode *root, ItemType data);
+	bool SearchTree (BstNode *root, string data);
 	
 	// Prints data to console as a horizontal tree
-	void printTreeToConsole (BstNode *root, ItemType data);
+	void printTreeToConsole (BstNode *root, int indent);
+	
+	// Traversals: Prints values in directed order
+	void printDataPreOrder (BstNode *root);
+	void printDataInOrder  (BstNode *root);
+	void printDataPostOrder(BstNode *root);
+	
+	
 	
 private:
 	// Pointer to the root node
@@ -51,8 +66,8 @@ private:
 // BST Constructors
 // Default
 
-template <typename ItemType>
-BinarySearchTree<ItemType>::BinarySearchTree() : rootPtr(nullptr)
+
+BinarySearchTree::BinarySearchTree() : rootPtr(nullptr)
 {
 	// Sets the root ptr to nullptr
 }
@@ -62,19 +77,17 @@ BinarySearchTree<ItemType>::BinarySearchTree() : rootPtr(nullptr)
 // Inserting a value //
 ///////////////////////
 
-template <typename ItemType>
-void BinarySearchTree<ItemType>::insertValue (ItemType data)
+void BinarySearchTree::insertValue (string data)
 {
 	Insert(rootPtr, data);
 }
 
 // Inserts value into the BST
-template <typename ItemType>
-BstNode* BinarySearchTree<ItemType>::Insert(BstNode *root ,ItemType data)
+BstNode* BinarySearchTree::Insert(BstNode *&root, const string data)
 {
-	if (root == nullptr)
+	if (root == NULL)
 	{
-		root = GetNewNode(data);    // Passes data into the new node
+		root = new BstNode(data, nullptr, nullptr); //Passes data into the new node
 	}
 	else if(data <= root->data)
 	{
@@ -93,8 +106,12 @@ BstNode* BinarySearchTree<ItemType>::Insert(BstNode *root ,ItemType data)
 //////////////////////////
 // Searches Binary Tree //
 //////////////////////////
-template <typename ItemType>
-bool BinarySearchTree<ItemType>::Search(BstNode *root, ItemType data)
+bool BinarySearchTree::search(string data)
+{
+	return SearchTree(rootPtr, data);
+}
+
+bool BinarySearchTree::SearchTree(BstNode *root, string data)
 {
 	if (root == nullptr)
 	{
@@ -109,13 +126,93 @@ bool BinarySearchTree<ItemType>::Search(BstNode *root, ItemType data)
 	else if (data <= root->data)
 	{
 		// Recursivley searches the left node
-		return Search(root->leftPtr, data);
+		return SearchTree(root->leftPtr, data);
 	}
 	else
 	{
 		// Recursivley searches the right node
-		return Search(root->rightPtr, data);
+		return SearchTree(root->rightPtr, data);
 	}
+}
+
+////////////////////////////////////////////////////////
+// Prints binary tree to console as a horizontal tree //
+////////////////////////////////////////////////////////
+void BinarySearchTree::printTreeHorizontalToConsole(int indent)
+{
+	printTreeToConsole(rootPtr, indent);
+}
+
+void BinarySearchTree::printTreeToConsole(BstNode *root, int indent)
+{
+	
+	if (root != nullptr)
+	{
+		// TODO: Use this to print the tree as a sideways tree in the console, use setw() to create indentation
+		printTreeToConsole(root->rightPtr, 3 + indent);
+		cout << setw(indent) << root->data << endl;
+		printTreeToConsole(root->leftPtr, 3 + indent);
+	}
+}
+
+
+////////////////////////////////////
+// Prints binary tree in PreOrder //
+////////////////////////////////////
+void BinarySearchTree::preOrderPrint()
+{
+	printDataPreOrder(rootPtr);
+}
+
+void BinarySearchTree::printDataPreOrder(BstNode *root)
+{
+	if (root != nullptr)
+	{
+		cout << root->data << endl;
+		printDataPreOrder(root->leftPtr);
+		printDataPreOrder(root->rightPtr);
+	}
+	
+}
+
+
+/////////////////////////////////
+// Prints binary tree In Order //
+/////////////////////////////////
+void BinarySearchTree::inOrderPrint()
+{
+	printDataInOrder(rootPtr);
+}
+
+void BinarySearchTree::printDataInOrder(BstNode *root)
+{
+	if (root != nullptr)
+	{
+		printDataInOrder(root->leftPtr);
+		cout << root->data << endl;
+		printDataInOrder(root->rightPtr);
+	}
+	
+}
+
+
+/////////////////////////////////////
+// Prints binary tree in PostOrder //
+/////////////////////////////////////
+void BinarySearchTree::postOrderPrint()
+{
+	printDataPostOrder(rootPtr);
+}
+
+void BinarySearchTree::printDataPostOrder(BstNode *root)
+{
+	if (root != nullptr)
+	{
+		printDataPostOrder(root->leftPtr);
+		printDataPostOrder(root->rightPtr);
+		cout << root->data << endl;
+	}
+	
 }
 
 #endif /* BSTImplementation_hpp */
