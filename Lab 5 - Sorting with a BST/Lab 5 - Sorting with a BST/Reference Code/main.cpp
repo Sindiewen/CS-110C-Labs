@@ -1,7 +1,7 @@
 #include <iostream>
 #include <iomanip>
 #include <fstream>
-#include "BSTImplementation.h"
+#include "BSTNode.h"
 
 using namespace std;
 

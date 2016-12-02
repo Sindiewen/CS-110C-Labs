@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC86278D1DEF751200C091EC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC86278C1DEF751200C091EC /* main.cpp */; };
-		CCDD3C1B1DF0DFE200FF6E37 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCDD3C191DF0DFE200FF6E37 /* test.cpp */; };
+		CCDD3C1B1DF0DFE200FF6E37 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCDD3C191DF0DFE200FF6E37 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,9 +24,8 @@
 
 /* Begin PBXFileReference section */
 		CC8627791DEF74B900C091EC /* Lab 5 - Sorting with a BST */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lab 5 - Sorting with a BST"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC86278C1DEF751200C091EC /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		CCDD3C171DF0DFE200FF6E37 /* BSTImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTImplementation.h; sourceTree = "<group>"; };
-		CCDD3C191DF0DFE200FF6E37 /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
+		CC8BDFCF1DF0FD4B009CB5A9 /* BSTNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSTNode.h; sourceTree = "<group>"; };
+		CCDD3C191DF0DFE200FF6E37 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +58,8 @@
 		CC86277B1DEF74B900C091EC /* Lab 5 - Sorting with a BST */ = {
 			isa = PBXGroup;
 			children = (
-				CC86278C1DEF751200C091EC /* main.cpp */,
-				CCDD3C171DF0DFE200FF6E37 /* BSTImplementation.h */,
-				CCDD3C191DF0DFE200FF6E37 /* test.cpp */,
+				CCDD3C191DF0DFE200FF6E37 /* main.cpp */,
+				CC8BDFCF1DF0FD4B009CB5A9 /* BSTNode.h */,
 			);
 			path = "Lab 5 - Sorting with a BST";
 			sourceTree = "<group>";
@@ -124,8 +121,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC86278D1DEF751200C091EC /* main.cpp in Sources */,
-				CCDD3C1B1DF0DFE200FF6E37 /* test.cpp in Sources */,
+				CCDD3C1B1DF0DFE200FF6E37 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
