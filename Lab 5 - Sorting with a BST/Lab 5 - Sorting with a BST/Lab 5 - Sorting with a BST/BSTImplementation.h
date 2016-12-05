@@ -59,6 +59,8 @@ protected:
 private:
 	// Pointer to the root node
 	BstNode *rootPtr;
+	
+	friend class DisplayBST;
 };
 
 // BST implementation //
