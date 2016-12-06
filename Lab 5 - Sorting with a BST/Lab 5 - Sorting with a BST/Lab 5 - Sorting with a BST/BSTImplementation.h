@@ -1,16 +1,19 @@
-//
-//  BSTImplementation.hpp
-//  Lab 5 - Sorting with a BST
-//
-//  Created by Rachel Vancleave on 12/1/16.
-//  Copyright © 2016 Rachel Vancleave. All rights reserved.
-//
+/*
+ * @name Rachel Vancleave
+ * @date 11/28/16
+ * @class CS 110C
+ *
+ * @file BSTIplementation.h
+ *
+ * @summary This header file is the implementation of the Binary Search Tree.
+ */
 
 #ifndef BSTImplementation_hpp
 #define BSTImplementation_hpp
 
 #include <stdio.h>
 #include <iostream>
+#include <iomanip>
 #include "BSTNode.h"
 
 using namespace std;
@@ -19,7 +22,7 @@ class BinarySearchTree
 {
 public: // Public Class Functions
 	
-	// Class COnstructor
+	// Class Constructor
 	// Default
 	BinarySearchTree();
 	
@@ -67,8 +70,6 @@ private:
 
 // BST Constructors
 // Default
-
-
 BinarySearchTree::BinarySearchTree() : rootPtr(nullptr)
 {
 	// Sets the root ptr to nullptr
@@ -137,14 +138,32 @@ bool BinarySearchTree::SearchTree(BstNode *root, string data)
 	}
 }
 
+//////////////////////////
+// Lab 5 Implementation //
+//////////////////////////
+
 ////////////////////////////////////////////////////////
 // Prints binary tree to console as a horizontal tree //
 ////////////////////////////////////////////////////////
+/*
+ * @summary Public Function - Printing tree into the console
+ * @pre An intenger of the indent value fow how many times to indent each line.
+ * @post none
+ */
 void BinarySearchTree::printTreeHorizontalToConsole(int indent)
 {
 	printTreeToConsole(rootPtr, indent);
 }
 
+/*
+ * @summary Private function - Printing tree to console
+ * This function uses recursion to go through each line in reverse "in Order" traversal
+ * to print each line to look like a tree to the console window.
+ * @pre a BsTNode of the root pointer, and indent value int.
+ * @post Using the root pointer, it traverses each node in reversed in order traversal
+ * to print each line like a tree. Indents each line by the indent + 3 to get a tree
+ * into the console window.
+ */
 void BinarySearchTree::printTreeToConsole(BstNode *root, int indent)
 {
 	
@@ -161,11 +180,21 @@ void BinarySearchTree::printTreeToConsole(BstNode *root, int indent)
 ////////////////////////////////////
 // Prints binary tree in PreOrder //
 ////////////////////////////////////
+/* @summary Public function: Function used to call the inorder print function.
+ * @pre none
+ * @post none
+ */
 void BinarySearchTree::preOrderPrint()
 {
 	printDataPreOrder(rootPtr);
 }
 
+/*
+  * @summary Private Function: Prints each node in the BST in preorder.
+  * @pre The root pointer to the root node
+  * @post Using the root pointer, It prints the current node, then recursivley calls each
+  * node.
+  */
 void BinarySearchTree::printDataPreOrder(BstNode *root)
 {
 	if (root != nullptr)
@@ -181,11 +210,22 @@ void BinarySearchTree::printDataPreOrder(BstNode *root)
 /////////////////////////////////
 // Prints binary tree In Order //
 /////////////////////////////////
+/* 
+ * @summary Public function: Function used to call the preorder print function.
+ * @pre none
+ * @post none
+ */
 void BinarySearchTree::inOrderPrint()
 {
 	printDataInOrder(rootPtr);
 }
 
+/*
+ * @summary Private Function: Prints each node in the BST in order. Alphabetically.
+ * @pre The root pointer to the root node
+ * @post Using the root pointer, it recursivley calls the function untill nullptr, then
+ * will print each line of the tree in order.
+ */
 void BinarySearchTree::printDataInOrder(BstNode *root)
 {
 	if (root != nullptr)
@@ -201,11 +241,22 @@ void BinarySearchTree::printDataInOrder(BstNode *root)
 /////////////////////////////////////
 // Prints binary tree in PostOrder //
 /////////////////////////////////////
+/* 
+ * @summary Public function: Function used to call the post order print function.
+ * @pre none
+ * @post none
+ */
 void BinarySearchTree::postOrderPrint()
 {
 	printDataPostOrder(rootPtr);
 }
 
+/*
+ * @summary Private Function: Prints each node in the BST in post order.
+ * @pre The root pointer to the root node
+ * @post Using the root pointer, it recursivley calls the function untill nullptr, then
+ * will print each line of the tree in order.
+ */
 void BinarySearchTree::printDataPostOrder(BstNode *root)
 {
 	if (root != nullptr)

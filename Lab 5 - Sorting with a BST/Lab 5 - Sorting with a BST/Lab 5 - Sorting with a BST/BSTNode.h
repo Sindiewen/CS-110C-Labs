@@ -1,10 +1,12 @@
-//
-//  BSTNode.h
-//  Lab 5 - Sorting with a BST
-//
-//  Created by Rachel Vancleave on 12/1/16.
-//  Copyright © 2016 Rachel Vancleave. All rights reserved.
-//
+/*
+ * @name Rachel Vancleave
+ * @date 11/28/16
+ * @class CS 110C
+ *
+ * @file BSTNode.h
+ *
+ * @summary This header file is the implementation of the Binary Search Tree Node.
+ */
 
 #ifndef BSTNode_h
 #define BSTNode_h
