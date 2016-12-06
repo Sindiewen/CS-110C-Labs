@@ -1,0 +1,32 @@
+// Output of Lab 5 //
+
+Welcome to the Tree Sort program!
+Enter name of a file you want sorted: input.dat
+
+Printing Tree:
+      September
+           October
+             November
+         May
+    March
+        June
+           July
+January
+ February
+          December
+         August
+       April
+
+Printing Tree In Alphabetical Order:
+April
+August
+December
+February
+January
+July
+June
+March
+May
+November
+October
+September

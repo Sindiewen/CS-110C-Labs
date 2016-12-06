@@ -3,7 +3,7 @@
  * @date 11/28/16
  * @class CS 110C
  *
- * @file main.cpp
+ * @file lab5_main.cpp
  *
  * @Summary This program uses a binary search tree. It takes input from a file and
  * sorts the contents in alphabetical order.
@@ -17,6 +17,9 @@
  *		After that, it will print each line of the BST InOrder to print each month
  *	alphabetically.
  *
+ *
+ * NOTE: This is a modified and simplified implementation from the supplied code. 
+ * Rewritten to be more consistant and friendly in regards to different compilers.
  */
 
 #include <iostream>
@@ -118,7 +121,7 @@ bool OpenFile(BinarySearchTree &sortMonthsBST, int &indent)
 		}
 		
 		// Successfully read from file
-		flag = true
+		flag = true;
 	}
 	
 	// Returns either true or false, weather the file successfully opened or not

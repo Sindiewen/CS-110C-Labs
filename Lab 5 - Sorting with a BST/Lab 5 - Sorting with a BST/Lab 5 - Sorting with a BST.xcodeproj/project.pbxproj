@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CCDD3C1B1DF0DFE200FF6E37 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCDD3C191DF0DFE200FF6E37 /* main.cpp */; };
+		CCDD3C1B1DF0DFE200FF6E37 /* lab5_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCDD3C191DF0DFE200FF6E37 /* lab5_main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +26,7 @@
 		CC8627791DEF74B900C091EC /* Lab 5 - Sorting with a BST */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lab 5 - Sorting with a BST"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC8BDFCF1DF0FD4B009CB5A9 /* BSTNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSTNode.h; sourceTree = "<group>"; };
 		CC8BDFD11DF100C3009CB5A9 /* BSTImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTImplementation.h; sourceTree = "<group>"; };
-		CCDD3C191DF0DFE200FF6E37 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CCDD3C191DF0DFE200FF6E37 /* lab5_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lab5_main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 		CC86277B1DEF74B900C091EC /* Lab 5 - Sorting with a BST */ = {
 			isa = PBXGroup;
 			children = (
-				CCDD3C191DF0DFE200FF6E37 /* main.cpp */,
+				CCDD3C191DF0DFE200FF6E37 /* lab5_main.cpp */,
 				CC8BDFCF1DF0FD4B009CB5A9 /* BSTNode.h */,
 				CC8BDFD11DF100C3009CB5A9 /* BSTImplementation.h */,
 			);
@@ -123,7 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCDD3C1B1DF0DFE200FF6E37 /* main.cpp in Sources */,
+				CCDD3C1B1DF0DFE200FF6E37 /* lab5_main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
