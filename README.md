@@ -1,2 +1,2 @@
 # CS-110C-Lab-s
-Storage of all the Labs for my CS 110C class
+all the Labs of my CS 110C class - fall 2016
